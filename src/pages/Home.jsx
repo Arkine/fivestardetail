@@ -1,7 +1,9 @@
 import React from 'react';
 
 import Page from './Page';
+
 import Hero from '../blocks/Hero';
+import Map from '../blocks/Map';
 
 import {
     Section,
@@ -82,6 +84,7 @@ export default class HomePage extends React.Component {
                         </p>
                     </Section.Content>
                 </Section.Row>
+                <Map />
             </Page>
         );
     }

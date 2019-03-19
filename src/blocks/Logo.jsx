@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 import logo from '../assets/logo.svg';
 
@@ -14,9 +15,9 @@ export default () => {
 
     return (
         <Container>
-            <a href="/">
+            <Link to="/">
                 <img src={logo} />
-            </a>
+            </Link>
         </Container>
     );
 }

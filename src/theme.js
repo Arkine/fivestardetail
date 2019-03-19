@@ -2,7 +2,8 @@ export default {
     colors: {
         cobalt: '#236dd3',
         white: '#fff',
-        oil: 'rgba(0,0,0,0.4)'
+        oil: 'rgba(0,0,0,0.4)',
+        smoke: 'rgba(255,255,255,.1)',
     },
     widths: {
         row: '65.5rem'

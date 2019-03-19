@@ -1,5 +1,5 @@
 import React, {Suspense} from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import {Router, Link, Route, Switch} from 'react-router-dom';
 import {createBrowserHistory} from 'history';
 
@@ -7,38 +7,56 @@ import theme from './theme';
 
 import Logo from './blocks/Logo';
 import ScreenLoader from './blocks/ScreenLoader';
+import Loading from './blocks/Loading';
+import CenteredLoader from './blocks/Loading/Centered';
+import PrimaryNav from './blocks/PrimaryNav';
+import Footer from './blocks/Footer';
+
 import Pages from './pages';
 
 import GlobalStyles from './assets/global-styles';
 import {
-  Body,
+	Body,
 } from './app-styled';
-import PrimaryNav from './blocks/PrimaryNav';
+
+const history = createBrowserHistory();
 
 class App extends React.Component {
-  render() {
-    return (
-      <ThemeProvider theme={theme}>
-        <Suspense fallback={ScreenLoader}>
-        <Router history={createBrowserHistory()}>
-            <Body>
-              <GlobalStyles />
-              <Body.header>
-                <Logo />
-                <PrimaryNav />
-              </Body.header>
-                <Switch>
-                  <Route path="/" exact component={Pages.Home} />
-                  <Route path="/about" component={Pages.About} />
-                  <Route component={Pages.NotFound} />
-                </Switch>
-                <Body.Footer>{'\u00A9'} {new Date().getFullYear()} Five Star Detailing</Body.Footer>
-            </Body>
-          </Router>
-        </Suspense>
-      </ThemeProvider>
-    );
-  }
+	render() {
+		return (
+			<ThemeProvider theme={theme}>
+				<Router history={history}>
+					<Body>
+						<GlobalStyles />
+						<Body.header>
+							<Logo />
+							<PrimaryNav {...history} />
+						</Body.header>
+						<Suspense fallback={CenteredLoader}>
+							<Switch>
+								<Route path="/" exact component={Pages.Home} />
+								<Route path="/about" exact component={Pages.About} />
+								
+								<Route path="/services" exact component={Pages.Services} />
+								<Route path="/services/automotive-detailing" exact component={Pages.AutomotiveDetailing} />
+								<Route path="/services/exotics-detailing" exact component={Pages.ExoticsDetailing} />
+								<Route path="/services/boat-detailing" exact component={Pages.BoatDetailing} />
+
+								<Route path="/ceramic-coatings" exact component={Pages.Coatings} />
+								<Route path="/ceramic-coatings/feynlab-coatings" exact component={Pages.Coatings} />
+								<Route path="/ceramic-coatings/solid-coatings" exact component={Pages.Coatings} />
+
+								<Route component={Pages.NotFound} />
+							</Switch>
+						</Suspense>
+						<Body.Footer>
+							<Footer />
+						</Body.Footer>
+					</Body>
+				</Router>
+			</ThemeProvider>
+		);
+	}
 }
 
 export default App;

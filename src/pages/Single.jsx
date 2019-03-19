@@ -9,9 +9,10 @@ export default (props) => {
 		<Section>
 			<Section.Main>
 				{props.title && 
-					<Section.Row>
-						<Section.PageTitle>{props.title}</Section.PageTitle>
-					</Section.Row>
+					<Section.Banner bgUrl={props.bgUrl}>
+                        <Section.BannerOverlay />
+					    <Section.BannerTitle>{props.title}</Section.BannerTitle>
+					</Section.Banner>
 				}
 				{props.children}
 			</Section.Main>

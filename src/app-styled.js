@@ -10,16 +10,8 @@ Body.header = styled.header`
     margin: 0 auto;
 `;
 
-Body.Footer = styled.div`
-    max-width: ${props => props.theme.widths.row};
-    margin: 1rem auto 0;
-    border-radius: 10px;
-    text-align: center;
-    padding: 2rem 0;
-
-    background-color: rgba(0,0,0, 0.3);
-`;
+Body.Footer = styled.div``;
 
 export const Button = styled.button`
-    
+
 `;

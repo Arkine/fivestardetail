@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Page from './Page';
+
 export default class AboutPage extends React.PureComponent {
     render() {
         return (
-            <div>About</div>
+            <Page title="About">
+                
+            </Page>
         )
     }
 }

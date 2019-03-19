@@ -6,9 +6,17 @@ import {
 
 import {menuItems} from './menu.js';
 
+function urlContains(url, itemUrl) {
+    if (window.location.pathname === '/') {
+        return false;
+    }
+    return url.indexOf(itemUrl) > -1;
+}
 
 
-export default () => {
+
+export default (props) => {
+    console.log(props)
     return (
         <Nav>
             {menuItems.map(item => (
@@ -16,6 +24,7 @@ export default () => {
                     <Nav.Link 
                         key={`nav-item-${item.label}`}
                         to={item.url}
+                        activeClassName='is-active'
                     >
                         {item.label}
                     </Nav.Link>
@@ -25,6 +34,7 @@ export default () => {
                                 <Nav.Link
                                     key={`nav-item-${child.label}`}
                                     to={child.url}
+                                    activeClassName='is-active'
                                 >
                                     {child.label}
                                 </Nav.Link>
