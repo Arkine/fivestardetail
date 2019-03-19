@@ -1,26 +1,42 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense} from 'react';
+import { ThemeProvider } from 'styled-components';
+import {Router, Link, Route, Switch} from 'react-router-dom';
+import {createBrowserHistory} from 'history';
 
-class App extends Component {
+import theme from './theme';
+
+import Logo from './blocks/Logo';
+import ScreenLoader from './blocks/ScreenLoader';
+import Pages from './pages';
+
+import GlobalStyles from './assets/global-styles';
+import {
+  Body,
+} from './app-styled';
+import PrimaryNav from './blocks/PrimaryNav';
+
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <ThemeProvider theme={theme}>
+        <Suspense fallback={ScreenLoader}>
+        <Router history={createBrowserHistory()}>
+            <Body>
+              <GlobalStyles />
+              <Body.header>
+                <Logo />
+                <PrimaryNav />
+              </Body.header>
+                <Switch>
+                  <Route path="/" exact component={Pages.Home} />
+                  <Route path="/about" component={Pages.About} />
+                  <Route component={Pages.NotFound} />
+                </Switch>
+                <Body.Footer>{'\u00A9'} {new Date().getFullYear()} Five Star Detailing</Body.Footer>
+            </Body>
+          </Router>
+        </Suspense>
+      </ThemeProvider>
     );
   }
 }
