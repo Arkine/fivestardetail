@@ -26,6 +26,7 @@ class App extends React.Component {
 		return (
 			<ThemeProvider theme={theme}>
 				<Router history={history}>
+					<ScreenLoader />
 					<Body>
 						<GlobalStyles />
 						<Body.header>

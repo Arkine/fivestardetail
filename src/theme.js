@@ -12,14 +12,14 @@ export default {
         color: '#fff',
         family: "'Muli', sans-serif",
         h1: {
-            desktop: '1.75rem',
-            tablet: '1.5rem',
-            mobile: '1.25rem'
+            desktop: '2.75rem',
+            tablet: '2.5rem',
+            mobile: '2.25rem'
         },
         h2: {
-            desktop: '1.5rem',
-            tablet: '1.25rem',
-            mobile: '1rem'
+            desktop: '2.25rem',
+            tablet: '2rem',
+            mobile: '1.75rem'
         },
     }
 }

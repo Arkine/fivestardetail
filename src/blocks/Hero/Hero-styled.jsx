@@ -24,3 +24,48 @@ export const Slide = styled.div`
     background-repeat: no-repeat;
     background-position: center;
 `;
+
+Slide.Content = styled.div`
+    position: absolute;
+    top: 25%;
+    left: 0;
+    z-index: 5;
+
+    padding: 0 1rem;
+
+    max-width: 35%;
+
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        color: #fff;
+
+        font-size: 1.2rem;
+        padding: 0;
+
+        svg {
+            display: inline-block;
+            color: ${props => props.theme.colors.cobalt};
+
+            margin-left: 1rem;
+        }
+
+        &:hover {
+            color: ${props => props.theme.colors.cobalt};
+
+            svg {
+                color: ${props => props.theme.colors.cobalt};
+            }
+        }
+    }
+
+    /* transform: translate(-25%, -50%); */
+`;
+
+Slide.Title = styled.h1`
+    font-size: ${props => props.theme.fonts.h2.desktop};
+    
+`;

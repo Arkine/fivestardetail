@@ -8,11 +8,7 @@ export default (props) => {
 	return (
 		<Section>
 			<Section.Main>
-				{props.title && 
-					<Section.Row>
-						<Section.PageTitle>{props.title}</Section.PageTitle>
-					</Section.Row>
-				}
+				{props.title && <Section.PageTitle>{props.title}</Section.PageTitle>}
 				{props.children}
 			</Section.Main>
 		</Section>

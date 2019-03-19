@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import {slides} from './slides.js';
 
@@ -6,8 +8,6 @@ import {
     Hero,
     Slide
 } from './Hero-styled';
-
-
 
 export default () => {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -32,7 +32,19 @@ export default () => {
     return (
         <Hero>
             {slides.map((slide, index) => (
-                <Slide bgUrl={slide.image} active={index === activeSlide} />
+                <Slide bgUrl={slide.image} active={index === activeSlide}>
+                    <Slide.Content>
+                        <Slide.Title>Sacramento's Premier Automotive Detailing Service</Slide.Title>
+                        {slide.button &&
+                            <button>
+                                <Link href={slide.button.url}>
+                                    {slide.button.text}
+                                    <FontAwesomeIcon icon={slide.button.icon} />
+                                </Link>
+                            </button>
+                        }
+                    </Slide.Content>
+                </Slide>
             ))}
         </Hero>
     );

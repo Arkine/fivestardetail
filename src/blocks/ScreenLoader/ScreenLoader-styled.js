@@ -16,7 +16,7 @@ export const Container = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 25;
 
     /* opacity: ${props => props.display ? 1: 0}; */
     animation: ${fade} 2s ease-in-out forwards;

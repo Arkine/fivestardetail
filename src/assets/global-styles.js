@@ -20,8 +20,8 @@ export default createGlobalStyle`
 
     }
 
-    #root {
-
+    h1,h2,h3,h4,h5,h6 {
+        font-weight: 600;
     }
 
     a {
@@ -44,5 +44,14 @@ export default createGlobalStyle`
         li {
             list-style-type: disc;
         }
+    }
+
+    button {
+        position: relative;
+        border: none;
+        background-color: transparent
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: 4px;
     }
 `;

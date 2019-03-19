@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 export const Body = styled.div`
     width: 100%;
@@ -13,5 +14,21 @@ Body.header = styled.header`
 Body.Footer = styled.div``;
 
 export const Button = styled.button`
+    color: #fff;
+    background-color: ${props => props.theme.colors.cobalt};
+`;
 
+Button.Link = styled.button`
+    background-color: transparent;
+    padding: 0;
+    margin-top: 1rem;
+
+    a {
+        padding: 1rem 0;
+        height: 100%;
+    }
+
+    svg {
+        color: ${props => props.theme.colors.cobalt};
+    }
 `;

@@ -27,7 +27,7 @@ export default () => {
                     <Footer.Address>
                         <div>
                             <FontAwesomeIcon icon={faMapMarkerAlt} />
-                            <span>9477 Greenback Ln Folsom CA 95630</span>
+                            <span><a href="https://www.google.com/maps/place/9477+Greenback+Ln,+Folsom,+CA+95630/@38.6790369,-121.2014992,17z/data=!3m1!4b1!4m5!3m4!1s0x809ae136c7ea705f:0x6e64b48977781fd3!8m2!3d38.6790327!4d-121.1993105">9477 Greenback Ln Folsom CA 95630</a></span>
                         </div>
                         <div>
                             <FontAwesomeIcon icon={faPhone} />
