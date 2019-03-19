@@ -210,6 +210,12 @@ Card.Footer = styled.div`
     border-bottom-right-radius: 4px;
     color: #fff;
 
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: ${props => props.theme.colors.cobaltDark};
+    }
+
     button {
         display: flex;
         align-items: center;

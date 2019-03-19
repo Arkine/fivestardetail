@@ -57,6 +57,10 @@ Nav.Subnav = styled.nav`
         &.is-active {
             background-color: #333;
         }
+
+        &:hover {
+            color: #fff;
+        }
     }
 `;
 

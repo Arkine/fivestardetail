@@ -1,6 +1,7 @@
 export default {
     colors: {
         cobalt: '#236dd3',
+        cobaltDark: '#1e5eb8',
         white: '#fff',
         oil: 'rgba(0,0,0,0.4)',
         smoke: 'rgba(255,255,255,.1)',

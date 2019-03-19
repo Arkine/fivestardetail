@@ -27,6 +27,11 @@ export default createGlobalStyle`
     a {
         color: ${props => props.theme.colors.cobalt};
         text-decoration: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: ${props => props.theme.colors.cobaltDark};
+        }
     }
 
     p {

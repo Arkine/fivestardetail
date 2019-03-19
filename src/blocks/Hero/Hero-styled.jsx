@@ -42,8 +42,8 @@ Slide.Content = styled.div`
         align-items: center;
 
         color: #fff;
-
         font-size: 1.2rem;
+        font-weight: 600;
         padding: 0;
 
         svg {
