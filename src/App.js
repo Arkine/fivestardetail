@@ -41,10 +41,11 @@ class App extends React.Component {
 								<Route path="/services/automotive-detailing" exact component={Pages.AutomotiveDetailing} />
 								<Route path="/services/exotics-detailing" exact component={Pages.ExoticsDetailing} />
 								<Route path="/services/boat-detailing" exact component={Pages.BoatDetailing} />
+								<Route path="/services/rv-detailing" exact component={Pages.RvDetailing} />
 
 								<Route path="/ceramic-coatings" exact component={Pages.Coatings} />
-								<Route path="/ceramic-coatings/feynlab-coatings" exact component={Pages.Coatings} />
-								<Route path="/ceramic-coatings/solid-coatings" exact component={Pages.Coatings} />
+								<Route path="/ceramic-coatings/feynlab-coatings" exact component={Pages.FeynlabCoating} />
+								<Route path="/ceramic-coatings/solid-coatings" exact component={Pages.SolidCoating} />
 
 								<Route component={Pages.NotFound} />
 							</Switch>

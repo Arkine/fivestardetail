@@ -1,8 +1,10 @@
 import autoDetailing from '../../assets/mercedes-car.jpg';
 import exoticsDetailing from '../../assets/exotics.jpg';
 import boatDetailing from '../../assets/boat.jpg';
+import rvDetailing from '../../assets/rv-banner.jpg';
 
 import FeynLab from '../../assets/feynlab-logo.png';
+import FeynLabBottle from '../../assets/feynlab-bottle.jpg';
 import Solid from '../../assets/solid-logo.png'
 
 export const menuItems = [
@@ -34,17 +36,28 @@ export const menuItems = [
                     src: boatDetailing,
                     type: 'background'
                 },
+            },
+            {
+                label: 'RV Detailing',
+                url: '/services/rv-detailing',
+                featuredImage: {
+                    src: rvDetailing,
+                    type: 'background'
+                },
             }
         ]
     },
     {
         label: 'Ceramic Coatings',
         url: '/ceramic-coatings',
-        featuredImage: '',
+        featuredImage: {
+            src: FeynLabBottle,
+            type: 'background'
+        },
         children: [
             {
                 label: 'FEYNLAB Coatings',
-                url: '/coatings/feynlab-coatings',
+                url: '/ceramic-coatings/feynlab-coatings',
                 featuredImage: {
                     src: FeynLab,
                     type: 'image'
@@ -52,7 +65,7 @@ export const menuItems = [
             },
             {
                 label: 'SOLID. Coatings',
-                url: '/coatings/solid-coatings',
+                url: '/ceramic-coatings/solid-coatings',
                 featuredImage: {
                     src: Solid,
                     type: 'image'

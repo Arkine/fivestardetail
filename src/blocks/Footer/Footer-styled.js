@@ -28,6 +28,7 @@ Footer.Col = styled.div`
 `;
 
 Footer.Nav = styled.nav`
+    padding-left: 0;
     li {
         list-style: none;
 

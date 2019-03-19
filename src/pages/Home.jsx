@@ -5,6 +5,8 @@ import Page from './Page';
 import Hero from '../blocks/Hero';
 import Map from '../blocks/Map';
 
+import {menuItems} from '../blocks/PrimaryNav/menu';
+
 import {
     Section,
     Card
@@ -13,6 +15,13 @@ import {
 import {
     Button
 } from '../app-styled.js';
+
+const services = menuItems.find(item => item.label === 'Services');
+const coatings = menuItems.find(item => item.label === 'Ceramic Coatings');
+
+const auto = services.children.find(item => item.label === 'Automotive Detailing');
+const boat = services.children.find(item => item.label === 'Boat Detailing');
+
 
 export default class HomePage extends React.Component {
     render() {
@@ -25,48 +34,37 @@ export default class HomePage extends React.Component {
                             <Section.Header>Services</Section.Header>
                             <Section.FlexRow>
                                 <Card>
-                                    <Card.Header />
+                                    <Card.Header bgUrl={auto.featuredImage.src}/>
                                     <Card.Body>
                                         <ul>
-                                            <li>Card Item</li>
-                                            <li>Card Item</li>
-                                            <li>Card Item</li>
+                                            <li>Quick Detail</li>
+                                            <li>Selling My Car Detail</li>
+                                            <li>Five Star Detail</li>
                                         </ul>
                                     </Card.Body>
                                     <Button>Auto Detailing</Button>
                                 </Card>
                                 <Card>
-                                    <Card.Header />
+                                    <Card.Header bgUrl={coatings.featuredImage.src} />
                                     <Card.Body>
                                         <ul>
-                                            <li>Card Item</li>
-                                            <li>Card Item</li>
-                                            <li>Card Item</li>
+                                            <li>FEYNLAB Coating</li>
+                                            <li>SOLID. Coating</li>
+                                            <li>Full Strenth Protection</li>
                                         </ul>
                                     </Card.Body>
-                                    <Button>Coatings</Button>
+                                    <Button>Ceramic Coatings</Button>
                                 </Card>
                                 <Card>
-                                    <Card.Header />
+                                    <Card.Header bgUrl={boat.featuredImage.src} />
                                     <Card.Body>
                                         <ul>
-                                            <li>Card Item</li>
-                                            <li>Card Item</li>
-                                            <li>Card Item</li>
+                                            <li>Exterior Detail</li>
+                                            <li>Interior Detail</li>
+                                            <li>Full Detail</li>
                                         </ul>
                                     </Card.Body>
                                     <Button>Boat Detailing</Button>
-                                </Card>
-                                <Card>
-                                    <Card.Header />
-                                    <Card.Body>
-                                        <ul>
-                                            <li>Card Item</li>
-                                            <li>Card Item</li>
-                                            <li>Card Item</li>
-                                        </ul>
-                                    </Card.Body>
-                                    <Button>Exotics Detailing</Button>
                                 </Card>
                             </Section.FlexRow>
                         </Section.Row>

@@ -38,4 +38,11 @@ export default createGlobalStyle`
     img, video, iframe {
         max-width: 100%;
     }
+
+     ul {
+        padding-left: 1.5rem;
+        li {
+            list-style-type: disc;
+        }
+    }
 `;

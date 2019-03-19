@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
-export const Section = styled.section``;
+export const Section = styled.section`
+    background-image: url(${props => props.bgUrl});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+`;
 
 Section.Main = styled.main`
     min-height: 300px;
@@ -86,7 +91,12 @@ export const Card = styled.div`
     margin: 1rem;
 
     ul {
-        /* padding-left: 0; */
+        margin: 1rem 0;
+        li {
+            & + li {
+                margin-top: 1rem;
+            }
+        }
     }
 `;
 Card.LogoWrapper = styled(Link)`
@@ -118,14 +128,17 @@ Card.Image = styled(Link)`
 `;
 
 Card.ImageText = styled.span`
-    font-size: ${props => props.theme.fonts.h2.desktop};
+    font-size: 1.5rem;
     color: #fff;
 `;
 
 Card.Body = styled.div``;
 Card.Header = styled.div`
-    height: 200px;
+    height: 150px;
 
-    border: 1px solid blue;
+    background-image: url(${props => props.bgUrl});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 `;
 
