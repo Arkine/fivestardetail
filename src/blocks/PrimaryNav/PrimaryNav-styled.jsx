@@ -48,7 +48,8 @@ Nav.Subnav = styled.nav`
 
     width: 245px;
 
-    background-color: ${props => props.theme.colors.oil};
+    /* background-color: ${props => props.theme.colors.oil}; */
+    background-color: rgba(0,0,0,0.8);
     border-bottom: 3px solid ${props => props.theme.colors.cobalt};
 
     display: none;

@@ -1,21 +1,21 @@
 import React from 'react';
 
 import {
-	Section
+	Single
 } from './styled';
 
 export default (props) => {
 	return (
-		<Section>
-			<Section.Main>
+		<Single>
+			<Single.Main>
 				{props.title && 
-					<Section.Banner bgUrl={props.bgUrl}>
-                        <Section.BannerOverlay />
-					    <Section.BannerTitle>{props.title}</Section.BannerTitle>
-					</Section.Banner>
+					<Single.Banner bgUrl={props.bgUrl}>
+                        <Single.BannerOverlay />
+					    <Single.BannerTitle>{props.title}</Single.BannerTitle>
+					</Single.Banner>
 				}
 				{props.children}
-			</Section.Main>
-		</Section>
+			</Single.Main>
+		</Single>
 	);
 }

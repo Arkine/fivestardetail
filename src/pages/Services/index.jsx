@@ -20,7 +20,8 @@ export default class Services extends React.PureComponent {
                 <Section.Row>
                     <Section.FlexRow>
                         {services.children.map(service => (     
-                            <Card.Image to={service.url} bgUrl={service.featuredImage.src} key={`service-${service.label}`}>
+                            <Card.Image to={service.url} key={`service-${service.label}`}>
+                                <Card.BackgroundImage bgUrl={service.featuredImage.src} />
                                 <Card.ImageText>{service.label}</Card.ImageText>
                             </Card.Image>
                         ))}

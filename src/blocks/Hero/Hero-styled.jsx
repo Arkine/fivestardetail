@@ -31,7 +31,8 @@ Slide.Content = styled.div`
     left: 0;
     z-index: 5;
 
-    padding: 0 1rem;
+    padding: 1rem;
+    background-color: ${props => props.theme.colors.oil};
 
     max-width: 35%;
 
@@ -44,7 +45,9 @@ Slide.Content = styled.div`
         color: #fff;
         font-size: 1.2rem;
         font-weight: 600;
+        
         padding: 0;
+        margin-top: 1rem
 
         svg {
             display: inline-block;
@@ -67,5 +70,5 @@ Slide.Content = styled.div`
 
 Slide.Title = styled.h1`
     font-size: ${props => props.theme.fonts.h2.desktop};
-    
+    margin: 0;
 `;

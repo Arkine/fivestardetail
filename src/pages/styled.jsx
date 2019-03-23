@@ -1,5 +1,10 @@
 import styled from 'styled-components';
+import { SSL_OP_SINGLE_DH_USE } from 'constants';
 import {Link} from 'react-router-dom';
+
+export const Content = styled.div`
+    /* margin-bottom: 1rem; */
+`;
 
 export const Section = styled.section`
     position: relative;
@@ -10,6 +15,12 @@ export const Section = styled.section`
     /* background-color: #fff; */
     background-position: center;
     background-size: cover;
+
+    padding: 2rem 0;
+
+    ul {
+        margin-left: 2rem
+    }
 `;
 
 Section.Background = styled.div`
@@ -25,7 +36,7 @@ Section.Row = styled.div`
 
     max-width: ${props => props.theme.widths.row};
     margin: 0 auto;
-    padding: 4rem 0;
+    /* padding: 4rem 0; */
 
     background-image: url(${props => props.bgUrl});
     background-repeat: no-repeat;
@@ -54,8 +65,6 @@ Section.Overlay = styled.div`
 Section.PageTitle = styled.h1`
     margin: 2rem auto 0;
     max-width: ${props => props.theme.widths.row};
-    font-size: ${props => props.theme.fonts.h1.desktop};
-    color: ${props => props.theme.colors.white};
 `;
 
 Section.Header = styled.h2`
@@ -64,52 +73,13 @@ Section.Header = styled.h2`
     margin-bottom: 1rem;
 `;
 
-Section.Content = styled.div`
-    /* margin-bottom: 1rem; */
-`;
-
 Section.FlexRow = styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content: ${props => props.justify ? props.justify : 'space-between'};
-    align-items: center;
+    align-items: ${props => props.alignItems ? props.alignItems : 'center'};;
     
     margin: 0 -1rem;
-`;
-
-Section.Banner = styled.div`
-    position: relative;
-
-    padding: 3rem 0;
-    margin: 0 auto;
-    max-width: ${props => props.theme.widths.row};
-    
-    border-radius: 10px;
-    background-color: ${props => props.theme.colors.smoke};
-    background-image: url(${props => props.bgUrl});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-`;
-
-Section.BannerOverlay = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    border-radius: 10px;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: ${props => props.theme.colors.oil};
-`;
-
-Section.BannerTitle = styled.h1`
-    position: relative;
-    z-index: 2;
-    font-size: ${props => props.theme.fonts.h1.desktop};
-    margin: 0 2rem;
 `;
 
 export const NotFound = styled.div`
@@ -124,6 +94,20 @@ export const NotFound = styled.div`
     }
 `;
 
+Section.Column = styled.div`
+    flex-basis: 50%;
+    /* flex-grow: 1rem; */
+`;
+
+Section.ColTitle = styled.h2`
+    display: block;
+    width: 100%;
+
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 900;
+`;
+
 export const Card = styled.div`
     flex-basis: ${props => props.flexBasis ? props.flexBasis : '18rem'};
     background-color: #fff;
@@ -133,6 +117,7 @@ export const Card = styled.div`
 
     ul {
         padding: 0;
+        margin-left: 0;
 
         li {
             padding: 1rem;
@@ -165,6 +150,8 @@ Card.Logo = styled.img`
 `;
 
 Card.Image = styled(Link)`
+    position: relative;
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -178,6 +165,26 @@ Card.Image = styled(Link)`
     margin: 1rem;
     padding: 2rem;
 
+    overflow: hidden;
+
+    &:hover {
+        > div {
+            transform: scale(1.1);
+        }
+    }
+`;
+
+Card.BackgroundImage = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    height: 100%;
+    width: 100%;
+
+    transition: all 0.2s ease-in-out;
+
     background-image: url(${props => props.bgUrl});
     background-repeat: no-repeat;
     background-position: center;
@@ -185,6 +192,9 @@ Card.Image = styled(Link)`
 `;
 
 Card.ImageText = styled.span`
+    position: relative;
+    z-index: 3;
+
     font-size: 1.5rem;
     color: #fff;
 `;
@@ -236,3 +246,59 @@ Card.Footer = styled.div`
     }
 `;
 
+export const Page = styled.div`
+
+`;
+
+Page.PageTitle = styled.h1`
+    margin: 1.5rem auto;
+    max-width: ${props => props.theme.widths.row};
+`;
+
+Page.Main = styled.main`
+    margin-bottom: 0;
+`;
+
+
+export const Single = styled.div`
+    position: relative;
+`;
+
+Single.Main = styled.main`
+
+`;
+
+Single.Banner = styled.div`
+    position: relative;
+
+    padding: 2rem 0;
+    margin: 0 auto;
+    max-width: ${props => props.theme.widths.row};
+    
+    border-radius: 10px;
+    background-color: ${props => props.theme.colors.smoke};
+    background-image: url(${props => props.bgUrl});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+`;
+
+Single.BannerOverlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 10px;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: ${props => props.theme.colors.oil};
+`;
+
+Single.BannerTitle = styled.h1`
+    position: relative;
+    z-index: 2;
+    font-size: ${props => props.theme.fonts.h1.desktop};
+    margin: 0 2rem;
+`;

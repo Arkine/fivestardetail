@@ -1,16 +1,16 @@
 import React from 'react';
 
 import {
-	Section
+	Page
 } from './styled';
 
 export default (props) => {
 	return (
-		<Section>
-			<Section.Main>
-				{props.title && <Section.PageTitle>{props.title}</Section.PageTitle>}
+		<Page>
+			<Page.Main>
+				{props.title && <Page.PageTitle>{props.title}</Page.PageTitle>}
 				{props.children}
-			</Section.Main>
-		</Section>
+			</Page.Main>
+		</Page>
 	);
 }

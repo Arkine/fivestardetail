@@ -20,8 +20,26 @@ export default createGlobalStyle`
 
     }
 
+    main {
+        position: relative;
+        
+        margin-bottom: 2rem;
+        min-height: 300px;
+    }
+
     h1,h2,h3,h4,h5,h6 {
-        font-weight: 600;
+        margin-bottom: 1.5rem;
+
+        font-weight: 900;
+        color: ${props => props.theme.colors.white};
+    }
+
+    h1 {
+        font-size: ${props => props.theme.fonts.h1.desktop};
+    }
+    
+    h2 {
+        font-size: ${props => props.theme.fonts.h2.desktop};
     }
 
     a {
@@ -48,6 +66,7 @@ export default createGlobalStyle`
         padding-left: 1.5rem;
         li {
             list-style-type: disc;
+            line-height: 1.5;
         }
     }
 

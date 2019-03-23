@@ -6,9 +6,13 @@ export const Body = styled.div`
     height: 100%;
 `;
 
-Body.header = styled.header`
+Body.Header = styled.header`
     max-width: ${props => props.theme.widths.row};
     margin: 0 auto;
+`;
+
+Body.Main = styled.main`
+    min-height: 400px;
 `;
 
 Body.Footer = styled.div``;
