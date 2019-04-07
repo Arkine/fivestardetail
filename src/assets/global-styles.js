@@ -23,7 +23,7 @@ export default createGlobalStyle`
     main {
         position: relative;
         
-        margin-bottom: 2rem;
+        margin-bottom: 0;
         min-height: 300px;
     }
 
