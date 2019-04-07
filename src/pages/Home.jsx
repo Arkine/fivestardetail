@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowRight, faCaretRight} from '@fortawesome/free-solid-svg-icons';
 
@@ -21,10 +22,14 @@ import {
 } from '../app-styled.js';
 
 const services = menuItems.find(item => item.label === 'Services');
-const coatings = menuItems.find(item => item.label === 'Ceramic Coatings');
 
+const coatings = menuItems.find(item => item.label === 'Ceramic Coatings');
 const auto = services.children.find(item => item.label === 'Automotive Detailing');
 const boat = services.children.find(item => item.label === 'Boat Detailing');
+
+console.log({
+    coatings, boat, auto
+})
 
 
 export default class HomePage extends React.Component {
@@ -55,7 +60,7 @@ export default class HomePage extends React.Component {
                                         </Card.Body>
                                         <Card.Footer>
                                             <Button.Link>
-                                                <a href={auto.url}>Automotive Detailing</a>  
+                                                <Link to={auto.url}>Automotive Detailing</Link>  
                                                 <FontAwesomeIcon icon={faArrowRight} /> 
                                             </Button.Link>
                                         </Card.Footer>
@@ -77,7 +82,7 @@ export default class HomePage extends React.Component {
                                         </Card.Body>
                                         <Card.Footer>
                                             <Button.Link>
-                                                <a href={coatings.url}>Ceramic Coatings</a>
+                                                <Link to={coatings.url}>Ceramic Coatings</Link>
                                                 <FontAwesomeIcon icon={faArrowRight} /> 
                                             </Button.Link>
                                         </Card.Footer>
@@ -99,7 +104,7 @@ export default class HomePage extends React.Component {
                                         </Card.Body>
                                         <Card.Footer>
                                             <Button.Link>
-                                                <a href={boat.url}>Boat Detailing</a>
+                                                <Link to={boat.url}>Boat Detailing</Link>
                                                 <FontAwesomeIcon icon={faArrowRight} /> 
                                             </Button.Link>
                                         </Card.Footer>

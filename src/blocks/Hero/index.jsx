@@ -15,19 +15,18 @@ export default () => {
     // This is timing out the slider
     // function checkTime() {
     //     if (((new Date() - startTime)/1000) > 5) {
-    //         const nextSlide = (activeSlide + 1) > (slides.length - 1) ? 0 : (activeSlide + 1);
+    //         const nextSlide = ((activeSlide + 1) > slides.length - 1) ? 0 : (activeSlide + 1);
     //         setStartTime(new Date());
     //         setActiveSlide(nextSlide);
     //     }
 
-    //     console.log('h')
-
-    //     window.requestAnimationFrame(() => {
-    //         checkTime();
-    //     });
+    //     window.requestAnimationFrame(checkTime);
     // }
 
-    // checkTime(); 
+    // useEffect(() => {
+    //     checkTime();
+    // });
+
 
     return (
         <Hero>
