@@ -16,11 +16,10 @@ function urlContains(url, itemUrl) {
 
 
 export default (props) => {
-    console.log(props)
     return (
         <Nav>
             {menuItems.map(item => (
-                <li>
+                <li aria-label="nav-item">
                     <Nav.Link 
                         key={`nav-item-${item.label}`}
                         to={item.url}
@@ -31,13 +30,15 @@ export default (props) => {
                     {item.children && 
                         <Nav.Subnav>
                             {item.children.map(child => (
-                                <Nav.Link
-                                    key={`nav-item-${child.label}`}
-                                    to={child.url}
-                                    activeClassName='is-active'
-                                >
-                                    {child.label}
-                                </Nav.Link>
+                                <li aria-label="nav-item">
+                                    <Nav.Link
+                                        key={`nav-item-${child.label}`}
+                                        to={child.url}
+                                        activeClassName='is-active'
+                                    >
+                                        {child.label}
+                                    </Nav.Link>
+                                </li>
                             ))}
                         </Nav.Subnav>
                     }

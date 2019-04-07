@@ -5,6 +5,9 @@ export const FlexRow = styled.div`
     flex-flow: row wrap;
 `;
 
+FlexRow.Row = styled.div`
+    flex-basis: 100%;
+`;
 FlexRow.Card = styled.div`
     flex-basis: ${props => props.flexBasis ? props.flexBasis : '20rem'};
 `;

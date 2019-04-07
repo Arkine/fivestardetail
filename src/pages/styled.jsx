@@ -251,7 +251,7 @@ export const Page = styled.div`
 `;
 
 Page.PageTitle = styled.h1`
-    margin: 1.5rem auto;
+    margin: 1.5rem auto 0.75rem;
     max-width: ${props => props.theme.widths.row};
 `;
 

@@ -19,9 +19,16 @@ export default class ServiceDetails extends React.PureComponent {
                         <FlexRow.Card>
                             <FlexRow.Card.Title>{service.title}</FlexRow.Card.Title>
                             <FlexRow.Card.List>
-                                {service.services.map(serviceType => (
-                                    <FlexRow.Card.ListItem>{serviceType.label}</FlexRow.Card.ListItem>
-                                ))}
+                                <React.Fragment>
+                                    {service.services.map((serviceType, i) => (
+                                        <FlexRow.Card.ListItem key={`service-type-${i}`}>{serviceType.label}</FlexRow.Card.ListItem>
+                                    ))}
+                                    {service.note && 
+                                        <FlexRow.Row>
+                                            {service.note}
+                                        </FlexRow.Row>
+                                    }
+                                </React.Fragment>
                             </FlexRow.Card.List>
                         </FlexRow.Card>
                     ))}

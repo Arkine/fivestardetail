@@ -12,17 +12,32 @@ export const Nav = styled.nav`
     background-color: ${props => props.theme.colors.smoke};
     box-shadow: 0 0 1px 1px rgba(0,0,0,.5);
     border-radius: 10px;
-
+    
+    /*
+        First level nav items
+    */
+    > li {
+        > a {
+            &.is-active {
+                color: ${props => props.theme.colors.cobalt};
+            }
+        }
+    }
+    /*
+        General nav items
+    */
     li {
         position: relative;
         list-style: none;
+        cursor: pointer;
 
         &:hover {
             nav {
                 display: block;
             }
             > a {
-                color: ${props => props.theme.colors.cobalt};
+                background-color: ${props => props.theme.colors.cobalt};
+                color: #fff;
                 border-bottom: 2px inset solid ${props => props.theme.colors.cobalt};
             }
         }
@@ -30,12 +45,6 @@ export const Nav = styled.nav`
         a {
             cursor: pointer;
             line-height: 1.2;
-        }
-        
-        > a {
-            &.is-active {
-                color: ${props => props.theme.colors.cobalt};
-            }
         }
     }
 `;
@@ -56,7 +65,8 @@ Nav.Subnav = styled.nav`
 
     a {
         &.is-active {
-            background-color: #333;
+            background-color: ${props => props.theme.colors.cobalt};
+            color: #fff;
         }
 
         &:hover {
@@ -72,8 +82,6 @@ Nav.Link = styled(NavLink)`
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
-
-    
     
     padding: 1rem;
 
