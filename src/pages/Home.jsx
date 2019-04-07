@@ -8,7 +8,6 @@ import Page from './Page';
 
 import Hero from '../blocks/Hero';
 import Map from '../blocks/Map';
-
 import {menuItems} from '../blocks/PrimaryNav/menu';
 
 import {

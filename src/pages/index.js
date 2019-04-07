@@ -8,7 +8,9 @@ export default {
     AutomotiveDetailing: lazy(() => import('./Services/Service-automotive')),
     ExoticsDetailing: lazy(() => import('./Services/Service-exotics')),
     BoatDetailing: lazy(() => import('./Services/Service-boats')),
+    MotorcycleDetailing: lazy(() => import('./Services/Service-motorcycle')),
     RvDetailing: lazy(() => import('./Services/Service-rv')),
+    Seadek: lazy(() => import('./Services/Service-seadek')),
 
     Coatings: lazy(() => import('./Coatings')),
     FeynlabCoating: lazy(() => import('./Coatings/Coating-feynlab')),

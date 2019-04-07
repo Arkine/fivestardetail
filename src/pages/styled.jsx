@@ -272,7 +272,7 @@ Single.Banner = styled.div`
     position: relative;
 
     padding: 2rem 0;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     max-width: ${props => props.theme.widths.row};
     
     border-radius: 10px;

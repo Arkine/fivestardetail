@@ -1,7 +1,9 @@
 import autoDetailing from '../../assets/mercedes-car.jpg';
 import exoticsDetailing from '../../assets/exotics.jpg';
 import boatDetailing from '../../assets/boat.jpg';
+import motorcycleDetailing from '../../assets/motorcycle.jpg';
 import rvDetailing from '../../assets/rv-banner.jpg';
+import seaDek from '../../assets/seadek.jpg';
 
 import FeynLab from '../../assets/feynlab-logo.png';
 import FeynLabBottle from '../../assets/feynlab-bottle.jpg';
@@ -38,10 +40,26 @@ export const menuItems = [
                 },
             },
             {
+                label: 'Motorcycle Detailing',
+                url: '/services/motorcycle-detailing',
+                featuredImage: {
+                    src: motorcycleDetailing,
+                    type: 'background'
+                },
+            },
+            {
                 label: 'RV Detailing',
                 url: '/services/rv-detailing',
                 featuredImage: {
                     src: rvDetailing,
+                    type: 'background'
+                },
+            },
+            {
+                label: 'SeaDek',
+                url: '/services/seadek',
+                featuredImage: {
+                    src: seaDek,
                     type: 'background'
                 },
             }
@@ -92,5 +110,5 @@ export const menuItems = [
         label: 'Contact',
         url: '/contact',
         featuredImage: '',
-    }
+    },
 ];

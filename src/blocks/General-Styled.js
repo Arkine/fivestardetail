@@ -10,6 +10,7 @@ FlexRow.Row = styled.div`
 `;
 FlexRow.Card = styled.div`
     flex-basis: ${props => props.flexBasis ? props.flexBasis : '20rem'};
+    flex-grow: 1;
 `;
 
 FlexRow.Card.Title = styled.h3``;
