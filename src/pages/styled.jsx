@@ -139,6 +139,12 @@ export const Card = styled.div`
 
 Card.LogoWrapper = styled(Link)`
     flex-basis: ${props => props.flexBasis ? props.flexBasis : '18rem'};
+
+    &:hover {
+        > img {
+            transform: scale(1.1);
+        }
+    }
 `;
 
 Card.Logo = styled.img`
@@ -147,6 +153,7 @@ Card.Logo = styled.img`
     height: 100px;
     
     margin: 1rem;
+    transition: all 0.2s ease-in-out;
 `;
 
 Card.Image = styled(Link)`

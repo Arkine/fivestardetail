@@ -1,13 +1,12 @@
 import React, {Suspense} from 'react';
 import { ThemeProvider } from 'styled-components';
-import {Router, Switch} from 'react-router-dom';
+import {Router} from 'react-router-dom';
 import {createBrowserHistory} from 'history';
 
 import theme from './theme';
 
 import Logo from './blocks/Logo';
 import ScreenLoader from './blocks/ScreenLoader';
-import Loading from './blocks/Loading';
 import CenteredLoader from './blocks/Loading/Centered';
 import PrimaryNav from './blocks/PrimaryNav';
 import Footer from './blocks/Footer';
@@ -28,7 +27,7 @@ class App extends React.Component {
 		return (
 			<ThemeProvider theme={theme}>
 				<Router history={history} onUpdate={scrollToTop}>
-					{/* <ScreenLoader /> */}
+					<ScreenLoader />
 					<Body>
 						<GlobalStyles />
 						<Body.Header>
