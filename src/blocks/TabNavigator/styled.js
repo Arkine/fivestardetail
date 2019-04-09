@@ -14,7 +14,8 @@ export const Tabs = styled.ul`
 
     flex-basis: 20rem;
 
-    background-color: ${props => props.theme.colors.oil};
+    background-color: rgba(255,255,255,.1);
+    /* background-color: ${props => props.theme.colors.oil}; */
 `;
 Tabs.Tab = styled.li`
     display: block;
@@ -45,5 +46,9 @@ Panels.Pane = styled.div`
 
     h2 {
         color: #333;
+    }
+
+    ul {
+        columns: 2;
     }
 `;

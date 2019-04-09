@@ -29,7 +29,7 @@ export default () => {
             const nextSlide = ((activeSlide + 1) > slides.length - 1) ? 0 : (activeSlide + 1);
             // setStartTime(new Date());
             setActiveSlide(nextSlide);
-        }, 9000)
+        }, 5000)
     });
 
 
