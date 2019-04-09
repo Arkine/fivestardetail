@@ -27,11 +27,6 @@ const coatings = menuItems.find(item => item.label === 'Ceramic Coatings');
 const auto = services.children.find(item => item.label === 'Automotive Detailing');
 const boat = services.children.find(item => item.label === 'Boat Detailing');
 
-console.log({
-    coatings, boat, auto
-})
-
-
 export default class HomePage extends React.Component {
     render() {
         return (

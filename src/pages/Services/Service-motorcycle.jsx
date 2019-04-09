@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Single from '../Single';
-import ServiceDetails from '../../blocks/ServiceDetails';
+// import ServiceDetails from '../../blocks/ServiceDetails';
+import TabNavigator from '../../blocks/TabNavigator';
 
 import MotorcycleData from '../Services/data/motorcycle';
 
@@ -15,8 +16,8 @@ const service = services.children.find(item => item.label === 'Motorcycle Detail
 export default () => {
     return (
         <Single title="Motorcycle Detailing" bgUrl={service.featuredImage.src}>
-            <ServiceDetails 
-                services={MotorcycleData}
+            <TabNavigator 
+                tabs={MotorcycleData}
             />
         </Single>
     );

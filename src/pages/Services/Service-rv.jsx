@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Single from '../Single';
-import ServiceDetails from '../../blocks/ServiceDetails';
+// import ServiceDetails from '../../blocks/ServiceDetails';
+import TabNavigator from '../../blocks/TabNavigator';
 
 import rvData from './data/rv';
 
@@ -15,8 +16,8 @@ const service = services.children.find(item => item.label === 'RV Detailing');
 export default () => {
     return (
         <Single title="RV Detailing" bgUrl={service.featuredImage.src}>
-            <ServiceDetails 
-                services={rvData}
+            <TabNavigator 
+                tabs={rvData}
             />
         </Single>
     );

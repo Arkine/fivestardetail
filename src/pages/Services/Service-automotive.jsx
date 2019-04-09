@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Single from '../Single';
-import ServiceDetails from '../../blocks/ServiceDetails';
+import TabNavigator from '../../blocks/TabNavigator';
+// import ServiceDetails from '../../blocks/ServiceDetails';
 
 import { 
     menuItems
@@ -15,8 +16,8 @@ const service = services.children.find(item => item.label === 'Automotive Detail
 export default () => {
     return (
         <Single title={service.label} bgUrl={service.featuredImage.src}>
-            <ServiceDetails 
-                services={servicesData}
+            <TabNavigator 
+                tabs={servicesData}
             />
         </Single>
     );

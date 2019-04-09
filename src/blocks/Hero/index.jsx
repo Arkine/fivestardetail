@@ -23,9 +23,14 @@ export default () => {
     //     window.requestAnimationFrame(checkTime);
     // }
 
-    // useEffect(() => {
-    //     checkTime();
-    // });
+    useEffect(() => {
+        // checkTime();
+        setInterval(() => {
+            const nextSlide = ((activeSlide + 1) > slides.length - 1) ? 0 : (activeSlide + 1);
+            // setStartTime(new Date());
+            setActiveSlide(nextSlide);
+        }, 9000)
+    });
 
 
     return (
