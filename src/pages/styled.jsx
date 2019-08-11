@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-import { SSL_OP_SINGLE_DH_USE } from 'constants';
 import {Link} from 'react-router-dom';
 
 export const Content = styled.div`
-    /* margin-bottom: 1rem; */
 `;
 
 export const Section = styled.section`

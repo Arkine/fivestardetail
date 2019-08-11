@@ -3,6 +3,8 @@ import React, {lazy} from 'react';
 export default {
     Home: lazy(() => import('./Home')),
     About: lazy(() => import('./About')),
+    Contact: lazy(() => import('./Contact')),
+    Affiliates: lazy(() => import('./Affiliates')),
 
     Services: lazy(() => import('./Services')),
     AutomotiveDetailing: lazy(() => import('./Services/Service-automotive')),
