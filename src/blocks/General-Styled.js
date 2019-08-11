@@ -23,3 +23,7 @@ export const Row = styled.div`
     max-width: ${props => props.theme.widths.row};
     margin: 0 auto;
 `;
+
+export const Section = styled.section`
+    margin: 1rem 0 3rem;
+`;

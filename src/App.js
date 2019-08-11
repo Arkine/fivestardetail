@@ -27,7 +27,7 @@ class App extends React.Component {
 		return (
 			<ThemeProvider theme={theme}>
 				<Router history={history} onUpdate={scrollToTop}>
-					{/* <ScreenLoader /> */}
+					<ScreenLoader />
 					<Body>
 						<GlobalStyles />
 						<Body.Header>

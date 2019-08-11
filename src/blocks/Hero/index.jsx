@@ -13,25 +13,21 @@ export default () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const [startTime, setStartTime] = useState(new Date());
     // This is timing out the slider
-    // function checkTime() {
-    //     if (((new Date() - startTime)/1000) > 5) {
-    //         const nextSlide = ((activeSlide + 1) > slides.length - 1) ? 0 : (activeSlide + 1);
-    //         setStartTime(new Date());
-    //         setActiveSlide(nextSlide);
-    //     }
-
-    //     window.requestAnimationFrame(checkTime);
-    // }
-
-    useEffect(() => {
-        // checkTime();
-        setInterval(() => {
+    function checkTime() {
+        if (((new Date() - startTime)/1000) > 5) {
             const nextSlide = ((activeSlide + 1) > slides.length - 1) ? 0 : (activeSlide + 1);
-            // setStartTime(new Date());
+            setStartTime(new Date());
             setActiveSlide(nextSlide);
-        }, 5000)
-    });
+        }
 
+        window.requestAnimationFrame(checkTime);
+    }
+
+    setInterval(() => {
+        const nextSlide = ((activeSlide + 1) > slides.length - 1) ? 0 : (activeSlide + 1);
+        // setStartTime(new Date());
+        setActiveSlide(nextSlide);
+    }, 4500);
 
     return (
         <Hero>

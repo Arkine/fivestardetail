@@ -1,10 +1,16 @@
 import React from 'react';
 
 import Single from '../Single';
-// import ServiceDetails from '../../blocks/ServiceDetails';
+
 import TabNavigator from '../../blocks/TabNavigator';
 
-import rvData from './data/rv';
+import {
+    tabs,
+    ExteriorDetail,
+    InteriorDetail,
+    FullDetail,
+    AddOns
+} from './data/rv';
 
 import { 
     menuItems
@@ -17,8 +23,13 @@ export default () => {
     return (
         <Single title="RV Detailing" bgUrl={service.featuredImage.src}>
             <TabNavigator 
-                tabs={rvData}
-            />
+                tabs={tabs}
+            >
+                <ExteriorDetail />
+                <InteriorDetail />
+                <FullDetail />
+                <AddOns />
+            </TabNavigator>
         </Single>
     );
 }
