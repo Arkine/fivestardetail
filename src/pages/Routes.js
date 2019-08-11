@@ -10,6 +10,8 @@ export default () => (
         <Switch>
             <ScrollToTopRoute path="/" exact component={Pages.Home} />
             <ScrollToTopRoute path="/about" exact component={Pages.About} />
+            <ScrollToTopRoute path="/affiliates" exact component={Pages.Affiliates} />
+            <ScrollToTopRoute path="/contact" exact component={Pages.Contact} />
             
             <ScrollToTopRoute path="/services" exact component={Pages.Services} />
             <ScrollToTopRoute path="/services/automotive-detailing" exact component={Pages.AutomotiveDetailing} />

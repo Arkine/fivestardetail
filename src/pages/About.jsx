@@ -1,8 +1,6 @@
 import React from 'react';
 
 import Page from './Page';
-import transitionRoute from '../decorators/transitionRoute';
-import {fadeFromTop} from '../utils/animations';
 
 import {
     Section

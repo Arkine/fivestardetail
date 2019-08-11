@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 export const Content = styled.div`
-    /* margin-bottom: 1rem; */
 `;
 
 export const Section = styled.section`
