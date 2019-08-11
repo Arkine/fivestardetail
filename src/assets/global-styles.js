@@ -15,6 +15,7 @@ export default createGlobalStyle`
         background-repeat: repeat;
 
         font-size: 18px;
+        letter-spacing: 1.2px;
         font-family: ${props => props.theme.fonts.family};
         color: ${props => props.theme.fonts.color};
 

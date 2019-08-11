@@ -12,7 +12,7 @@ import FeynlabCeramicPlusDiagram from '../../../assets/feynlab-ceramic-plus-diag
 import FeynlabCeramicBottleImage from '../../../assets/feynlab-ceramic-bottle.png';
 import FeynlabCeramicDiagram from '../../../assets/feynlab-ceramic-diagram.png';
 import FeynlabHealLiteBottleImage from '../../../assets/feynlab-heal-lite-bottle.png';
-import FeynlabHealLiteBottleDiagram from '../../../assets/feynlab-heal-lite-diagram.png';
+import FeynlabHealLiteBottleDiagram from '../../../assets/feynlab-heal-lite-diagram.jpg';
 import WheelsOffImage from '../../../assets/feynlab-wheels-off.jpg';
 import HydroMarinePackageBottle from '../../../assets/feynlab-hydro-marine-bottle.png';
 
@@ -77,7 +77,7 @@ export const CeramicLite = () => (
             </ul>
         </Section>
         <Section>
-         <FeaturedImage width='auto' height='500px' size='contain' image={FeynlabCeramicLiteDiagram} bgColor='#333' />
+         <FeaturedImage width='auto' height='500px' size='contain' image={FeynlabCeramicLiteDiagram} />
         </Section>
     </Section>
 );
@@ -98,7 +98,7 @@ export const CeramicPlus = () => (
             </ul>
         </Section>
         <Section>
-         <FeaturedImage width='auto' height='500px' size='contain' image={FeynlabCeramicPlusDiagram} bgColor='#333' />
+         <FeaturedImage width='auto' height='500px' size='contain' image={FeynlabCeramicPlusDiagram} />
         </Section>
     </Section>
 );
@@ -138,7 +138,7 @@ export const HealLitePackage = () => (
             </ul>
         </Section>
         <Section>
-         <FeaturedImage width='auto' height='500px' size='contain' image={FeynlabHealLiteBottleDiagram} bgColor='#333' />
+         <FeaturedImage width='auto' height='500px' size='contain' image={FeynlabHealLiteBottleDiagram} />
         </Section>
     </Section>
 );
