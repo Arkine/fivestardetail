@@ -3,6 +3,7 @@ import React from 'react';
 import {
     Container,
     Tabs,
+    FeaturedImage,
     Panels
 } from './styled';
 
@@ -22,6 +23,7 @@ export default class TabNavigator extends React.Component {
     }
 
     render() {
+        console.log({child: this.props.children})
         return (
             <Container>
                 <Tabs>
@@ -36,20 +38,12 @@ export default class TabNavigator extends React.Component {
                     ))}
                 </Tabs>
                 <Panels>
-                    {this.props.tabs.map((tab, i) => (
+                    {React.Children.map(this.props.children, (child, i) => (
                         <Panels.Pane 
-                            key={`tabs-pane-${i}`}
+                            key={`tab-navigator-pane-${i}`}
                             active={i === this.state.activeTab}
                         >   
-                            <h2>{tab.title}</h2>
-                            {tab.description && 
-                                <p>{tab.description}</p>
-                            }
-                            <ul>
-                                {tab.services.map((service, i) => (
-                                    <li key={`tabs-panel-${i}`}>{service.label}</li>
-                                ))}
-                            </ul>
+                            {child}
                         </Panels.Pane>
                     ))}
                 </Panels>

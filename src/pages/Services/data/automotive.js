@@ -1,362 +1,262 @@
-export default [
+import React from 'react';
+import {
+    FeaturedImage,
+    Section
+}  from '../../../blocks/TabNavigator/styled';
+
+import InteriorDetailingImage from '../../../assets/auto-interior-detail.jpg';
+import PaintCorrectionImage from '../../../assets/paint-correction.jpg';
+
+export const tabData = [
     {
         title: "Exterior Detail",
-        services: [
-            {
-                label: "Hand Wash & Dry"
-            },
-            {
-                label: "Clean Rims, Tires, & Wheel Wells"
-            },
-            {
-                label: "Condition Tires"
-            },
-            {
-                label: "Condition Wheel Wells"
-            },
-            {
-                label: "Condition Exterior Trim"
-            },
-            {
-                label: "Clean & Wipe Door Jams"
-            },
-            {
-                label: "Apply Exterior Paint Protection (Wax/Sealant)"
-            },
-            {
-                label: "Clean and Polish Glass"
-            },
-        ]
     },
     {
         title: "Interior Detail",
-        services: [
-            {
-                label: "Vacuum Carpets & Seats"
-            },
-            {
-                label: "Clean & Condition Seats, Dash, & Panels"
-            },
-            {
-                label: "Shampoo Carpets, Seats, & Trunk"
-            },
-            {
-                label: "Clean & Condition Leather Seats"
-            },
-            {
-                label: "Clean & Polish Glass"
-            },
-            {
-                label: "Clean Headliner"
-            },
-            {
-                label: "Steam Clean Cracks and Crevices and All Panels, Carpet and Seats"
-            },
-            {
-                label: "Clean & Wipe Door Jams"
-            },
-        ]
     },
     {
         title: "Full Detail",
-        services: [
-            {
-                label: "Hand Wash & Dry",
-            },
-            {
-                label: "Clean Rims, Tires, & Wheel Wells",
-            },
-            {
-                label: "Remove Surface Contaminants With Clay Bar",
-            },
-            {
-                label: "Condition Tires",
-            },
-            {
-                label: "Condition Wheel Wells",
-            },
-            {
-                label: "Condition Exterior Trim",
-            },
-            {
-                label: "Clean & Wipe Door Jams",
-            },
-            {
-                label: "Apply Exterior Paint Protection (Wax/Sealant)",
-            },
-            {
-                label: "Clean and Polish Glass",
-            },
-            // Interior
-            {
-                label: "Vacuum Carpets & Seats",
-            },
-            {
-                label: "Clean & Condition Seats, Dash, & Panels",
-            },
-            {
-                label: "Shampoo Carpets, Seats, & Trunk",
-            },
-            {
-                label: "Clean & Condition Leather Seats",
-            },
-            {
-                label: "Clean & Polish Glass",
-            },
-            {
-                label: "Clean Headliner",
-            },
-            {
-                label: "Steam Clean Cracks and Crevices and All Panels, Carpet and Seats",
-            },
-            {
-                label: "Clean & Wipe Door Jams",
-            },
-        ]
     },
     {
         title: "Quick Detail",
-        services: [ 
-            {
-                label: "Hand Wash & Dry"
-            },
-            {
-                label: "Clean & Polish Glass"
-            },
-            {
-                label: "Clean Rims, Tires, & Wheel Wells"
-            },
-            {
-                label: "Condition Tires"
-            },
-            // Interior
-            {
-                label: "Vacuum"
-            },
-            {
-                label: "Clean & Polish Glass"
-            },
-            {
-                label: "Wipe Door Jams"
-            },
-
-        ]
     },
     {
         title: "Selling My Car Detail",
-        services: [
-            {
-                label:  "Hand Wash & Dry"
-            },
-            {
-                label: "Clean Rims, Tires, & Wheel Wells"
-            },
-            {
-                label: "Condition Tires"
-            },
-            {
-                label: "Condition Wheel Wells"
-            },
-            {
-                label: "Condition Exterior Trim"
-            },
-            {
-                label: "Clean & Wipe Door Jams"
-            },
-            {
-                label: "Clean & Polish Glass"
-            },
-            {
-                label: "Clean & Condition Engine"
-            },
-            // Interior
-            {
-                label: "Vacuum Carpets & Seats",
-            },
-            {
-                label: "Clean & Condition Seats, Dash, & Panels"
-            },
-            {
-                label: "Shampoo Carpets, Seats, & Trunk"
-            },
-            {
-                label: "Clean & Condition Leather Seats"
-            },
-            {
-                label: "Clean & Polish Glass"
-            },
-            {
-                label: "Clean Headliner"
-            },
-            {
-                label: "Steam Clean Cracks and Crevices and All Panels, Carpet and Seats"
-            },
-            {
-                label: "Clean & Wipe Door Jams"
-            }
-        ]
     },
     {
         title: "Five Star Detail",
-        services: [
-            {
-                label: "Hand Wash & Dry"
-            },
-            {
-                label: "Clean Rims, Tires, & Wheel Wells"
-            },
-            {
-                label: "Remove Surface Contaminants With Clay Bar"
-            },
-            {
-                label: "Condition Tires"
-            },
-            {
-                label: "Condition Wheel Wells"
-            },
-            {
-                label: "Condition Exterior Trim"
-            },
-            {
-                label: "Clean & Wipe Door Jams"
-            },
-            {
-                label: "Apply Exterior Paint Protection (Wax/Sealant)"
-            },
-            {
-                label: "Clean & Polish Glass"
-            },
-            {
-                label: "Clean & Condition Engine"
-            },
-            // Interior
-            {
-                label: "Vacuum Carpets & Seats",
-
-            },
-            {
-                label: "Clean & Condition Seats, Dash, & Panels"
-            },
-            {
-                label: "Shampoo Carpets, Seats, & Trunk"
-            },
-            {
-                label: "Clean & Condition Leather Seats"
-            },
-            {
-                label: "Clean & Polish Glass"
-            },
-            {
-                label: "Clean Headliner"
-            },
-            {
-                label: "Steam Clean Cracks and Crevices and All Panels, Carpet and Seats"
-            },
-            {
-                label: "Clean & Wipe Door Jams"
-            }
-        ]
     },
     {
         title: "Paint Correction",
-        services: [
-            {
-                label: "Single Stage"
-            },
-            {
-                label: "Two Stage"
-            },
-            {
-                label: "Three Stage"
-            },
-            {
-                label: "Wet Sanding"
-            },
-            {
-                label: "(Call for Quote)"
-            }
-        ]
     },
     {
         title: "Add-Ons",
-        services: [
-            {
-                label: "Vehicle Customization"
-            },
-            {
-                label: "Clay Bar"
-            },
-            {
-                label: "Trim Restoration"
-            },
-            {
-                label: "Headlight Restoration"
-            },
-            {
-                label: "Engine Detail"
-            },
-            {
-                label: "Water Spot Removal"
-            },
-            {
-                label: "Fabric Stain Guard"
-            },
-            {
-                label: "Window Tint Removal"
-            },
-            {
-                label: "Emblem Debadging"
-            },
-            {
-                label: "Clear Bra"
-            },
-            {
-                label: "Graphic Design"
-            },
-            {
-                label: "Decal Removal"
-            },
-            {
-                label: "Vehicle Wraps"
-            },
-            {
-                label: "Carpet Dyeing"
-            },
-            {
-                label: "Upholstery Repair"
-            },
-            {
-                label: "Paint less Dent Repair"
-            },
-            {
-                label: "Painting"
-            },
-            {
-                label: "Paint Protection Film"
-            },
-        ]
+       
     },
     {
         title: "Things that may result in an upcharge",
-        services: [
-            {
-                label: "Pet hair"
-            },
-            {
-                label: "Cigarette smoke residue"
-            },
-            {
-                label: "Headliner deep cleaning"
-            },
-            {
-                label: "Excessive sand or dirt"
-            }
-        ],
+       
         note: "NOTE: Different Cars require different levels of care and therefore will require different pricing depending on the amount of work that needs to be done. Five Star Detailing uses the Highest Quality Products and Equipment when detailing to ensure that you get the Best detail possible."
     }
 ]
 
+export const ExteriorDetail = () => (
+    <Section>
+        <Section.Title>Exterior Detail</Section.Title>
+        <ul>
+            <li>Hand Wash &amp; Dry</li>
+            <li>Clean Rims, Tires, &amp; Wheel Wells</li>
+            <li>Remove Surface Contaminants With Clay Bar</li>
+            <li>Condition&nbsp;Tires</li>
+            <li>Condition Wheel Wells</li>
+            <li>Condition Exterior Trim</li>
+            <li>Clean &amp; Wipe Door Jams</li>
+            <li>Apply Exterior Paint Protection (Wax/Sealant)</li>
+            <li>Clean and Polish Glass</li>
+        </ul>
+    </Section>
+);
 
 
+export const InteriorDetail = () => (
+    <Section>
+        <Section.Title>Interior Detail</Section.Title>
+        <FeaturedImage image={InteriorDetailingImage} />
+        <ul>
+            <li>Vacuum Carpets &amp; Seats</li>
+            <li>Clean &amp; Condition Seats, Dash, &amp; Panels</li>
+            <li>Shampoo Carpets, Seats, &amp; Trunk</li>
+            <li>Clean &amp; Condition Leather Seats</li>
+            <li>Clean &amp; Polish Glass</li>
+            <li>Clean Headliner</li>
+            <li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</li>
+            <li>Clean &amp; Wipe Door Jams</li>
+        </ul>
+    </Section>
+);
 
+export const FullDetail = () => (
+    <div>
+        <Section.Title>Full Detail</Section.Title>
+        <Section>
+            <h3><strong>Exterior</strong></h3>
+            <ul>
+                <li>Hand Wash &amp; Dry</li>
+                <li>Clean Rims, Tires, &amp; Wheel Wells</li>
+                <li>Remove Surface Contaminants With Clay Bar</li>
+                <li>Condition&nbsp;Tires</li>
+                <li>Condition Wheel Wells</li>
+                <li>Condition Exterior Trim</li>
+                <li>Clean &amp; Wipe Door Jams</li>
+                <li>Apply Exterior Paint Protection (Wax/Sealant)</li>
+                <li>Clean and Polish Glass</li>
+            </ul>
+        </Section>
+        <Section>
+            <h3><strong>Interior</strong></h3>
+            <ul>
+                <li>Vacuum Carpets &amp; Seats</li>
+                <li>Clean &amp; Condition Seats, Dash, &amp; Panels</li>
+                <li>Shampoo Carpets, Seats, &amp; Trunk</li>
+                <li>Clean &amp; Condition Leather Seats</li>
+                <li>Clean &amp; Polish Glass</li>
+                <li>Clean Headliner</li>
+                <li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</li>
+                <li>Clean &amp; Wipe Door Jams</li>
+            </ul>
+        </Section>
+    </div>
+);
 
+export const QuickDetail = () => (
+    <div>
+        <Section.Title>Quick Detail</Section.Title>
+        <Section>
+            <h3><strong>Exterior</strong></h3>
+            <ul>
+                <li>Hand Wash &amp; Dry</li>
+                <li>Clean &amp; Polish Glass</li>
+                <li>Clean Rims, Tires, &amp; Wheel Wells</li>
+                <li>Condition Tires</li>
+            </ul>
+        
+        </Section>
+        <Section>
+            <h3><strong>Interior</strong></h3>
+            <ul>
+                <li>Vacuum</li>
+                <li>Clean &amp; Polish Glass</li>
+                <li>Quick Wipedown</li>
+                <li>Wipe Door Jams</li>
+            </ul>
+        </Section>
+    </div>
+);
+
+export const SellingMyCarDetail = () => (
+    <div>
+        <Section.Title>Selling My Car Detail</Section.Title>
+        <Section>
+            <h3><strong>Exterior</strong></h3>
+            <ul>
+                <li>Hand Wash &amp; Dry</li>
+                <li>Clean Rims, Tires, &amp; Wheel Wells</li>
+                <li>Condition&nbsp;Tires</li>
+                <li>Condition Wheel Wells</li>
+                <li>Condition Exterior Trim</li>
+                <li>Clean &amp; Wipe Door Jams</li>
+                <li>Clean and Polish Glass</li>
+                <li>Clean Engine</li>
+                <li>Condition Engine</li>
+            </ul>
+        </Section>
+        <Section>
+            <h3><strong>Interior</strong></h3>
+            <ul>
+                <li>Vacuum Carpets &amp; Seats</li>
+                <li>Clean &amp; Condition Seats, Dash, &amp; Panels</li>
+                <li>Shampoo Carpets, Seats, &amp; Trunk</li>
+                <li>Clean &amp; Condition Leather Seats</li>
+                <li>Clean &amp; Polish Glass</li>
+                <li>Clean Headliner</li>
+                <li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</li>
+                <li>Clean &amp; Wipe Door Jams</li>
+            </ul>
+        </Section>
+    </div>
+);
+
+export const FiveStarDetail = () => (
+    <div>
+        <Section.Title>Five Star Detail</Section.Title>
+        <Section>
+            <h3><strong>Exterior</strong></h3>
+            <ul>
+                <li>Hand Wash &amp; Dry</li>
+                <li>Clean Rims, Tires, &amp; Wheel Wells</li>
+                <li>Remove Surface Contaminants With Clay Bar</li>
+                <li>Condition&nbsp;Tires</li>
+                <li>Condition Wheel Wells</li>
+                <li>Condition Exterior Trim</li>
+                <li>Clean &amp; Wipe Door Jams</li>
+                <li>Apply Exterior Paint Protection (Wax/Sealant)</li>
+                <li>Clean and Polish Glass</li>
+                <li>Clean Engine</li>
+                <li>Condition Engine</li>
+            </ul>
+        </Section>
+
+        <Section>
+            <h3><strong>Interior</strong></h3>
+            <ul>
+                <li>Vacuum Carpets &amp; Seats</li>
+                <li>Clean &amp; Condition Seats, Dash, &amp; Panels</li>
+                <li>Shampoo Carpets, Seats, &amp; Trunk</li>
+                <li>Clean &amp; Condition Leather Seats</li>
+                <li>Clean &amp; Polish Glass</li>
+                <li>Clean Headliner</li>
+                <li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</li>
+                <li>Clean &amp; Wipe Door Jams</li>
+            </ul>
+        </Section>      
+    </div>
+);
+
+export const PaintCorrection = () => (
+    <div>
+        <Section.Title>Paint Correction</Section.Title>
+        <FeaturedImage image={PaintCorrectionImage} />
+        <Section>
+        <ul>
+            <li>Single Stage Paint Correction</li>
+            <li>Two Stage Paint Correction</li>
+            <li>Three Stage Paint Correction</li>
+            <li>Wet Sanding</li>
+            <li>(Call for Quote)</li>
+            </ul>
+        </Section>
+    </div>
+);
+
+export const Addons = () => (
+    <Section>
+        <Section.Title>Addons</Section.Title>
+        <ul>
+            <li>Vehicle Customization</li>
+            <li>Clay Bar</li>
+            <li>Trim Restoration</li>
+            <li>Headlight Restoration</li>
+            <li>Engine Detail</li>
+            <li>Water Spot Removal</li>
+            <li>Fabric Stain Guard</li>
+            <li>Window Tint Removal</li>
+            <li>Emblem Debadging</li>
+            <li>Clear Bra</li>
+            <li>Graphic Design</li>
+            <li>Decal Removal</li>
+            <li>Vehicle Wraps</li>
+            <li>Carpet Dyeing</li>
+            <li>Upholstery Repair</li>
+            <li>Paint less Dent Repair</li>
+            <li>Painting</li>
+            <li>Paint Protection Film</li>
+        </ul>
+    </Section>
+);
+
+export const Upcharges = () => (
+    <div>
+        <Section>
+            <Section.Title>Things that may result in an upcharge</Section.Title>
+            <ul>
+                <li>Pet hair</li>
+                <li>Cigarette smoke residue</li>
+                <li>Excessive sand or dirt</li>
+                <li>Headliner deep cleaning</li>
+            </ul>
+        </Section>
+        <Section>
+            <p><strong>NOTE: </strong>Different Cars require different levels of care and therefore will require different pricing depending on the amount of work that needs to be done. Five Star Detailing uses the <strong>Highest Quality</strong> <strong>Products and Equipment</strong> when detailing to ensure that you get the <strong>Best</strong> detail possible.</p>
+        </Section>
+    </div>
+);

@@ -33,6 +33,7 @@ Button.Link = styled.button`
     }
 
     svg {
+        margin-left: 1rem;
         color: ${props => props.theme.colors.cobalt};
     }
 `;

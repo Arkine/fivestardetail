@@ -1,10 +1,14 @@
 import React from 'react';
 
 import Single from '../Single';
-// import ServiceDetails from '../../blocks/ServiceDetails';
+
 import TabNavigator from '../../blocks/TabNavigator';
 
-import MotorcycleData from '../Services/data/motorcycle';
+import {
+    tabs,
+    Detailing,
+    AddOns
+} from './data/motorcycle';
 
 import { 
     menuItems
@@ -17,8 +21,11 @@ export default () => {
     return (
         <Single title="Motorcycle Detailing" bgUrl={service.featuredImage.src}>
             <TabNavigator 
-                tabs={MotorcycleData}
-            />
+                tabs={tabs}
+            >
+                <Detailing />
+                <AddOns />
+            </TabNavigator>
         </Single>
     );
 }

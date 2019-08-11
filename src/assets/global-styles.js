@@ -64,9 +64,10 @@ export default createGlobalStyle`
 
      ul {
         padding-left: 1.5rem;
+        
         li {
             list-style-type: disc;
-            line-height: 1.5;
+            line-height: 1.75;
         }
     }
 

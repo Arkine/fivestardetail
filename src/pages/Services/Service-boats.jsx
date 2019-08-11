@@ -4,7 +4,13 @@ import Single from '../Single';
 // import ServiceDetails from '../../blocks/ServiceDetails';
 import TabNavigator from '../../blocks/TabNavigator';
 
-import BoatData from '../Services/data/boats';
+import {
+    tabs,
+    ExteriorDetail,
+    InteriorDetail,
+    FullDetail,
+    AddOns
+} from './data/boats';
 
 import { 
     menuItems
@@ -17,8 +23,13 @@ export default () => {
     return (
         <Single title="Boat Detailing" bgUrl={service.featuredImage.src}>
             <TabNavigator 
-                tabs={BoatData}
-            />
+                tabs={tabs}
+            >
+                <ExteriorDetail />
+                <InteriorDetail />
+                <FullDetail />
+                <AddOns />
+            </TabNavigator>
         </Single>
     );
 }
