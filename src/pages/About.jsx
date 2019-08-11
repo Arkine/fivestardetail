@@ -8,7 +8,6 @@ import {
     Section
 } from './styled';
 
-@transitionRoute(fadeFromTop)
 class AboutPage extends React.PureComponent {
     render() {
         return (
