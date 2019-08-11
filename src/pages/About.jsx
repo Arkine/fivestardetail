@@ -1,12 +1,15 @@
 import React from 'react';
 
 import Page from './Page';
+import transitionRoute from '../decorators/transitionRoute';
+import {fadeFromTop} from '../utils/animations';
 
 import {
     Section
 } from './styled';
 
-export default class AboutPage extends React.PureComponent {
+@transitionRoute(fadeFromTop)
+class AboutPage extends React.PureComponent {
     render() {
         return (
             <Page title="About">
@@ -30,3 +33,5 @@ export default class AboutPage extends React.PureComponent {
         )
     }
 }
+
+export default AboutPage;
