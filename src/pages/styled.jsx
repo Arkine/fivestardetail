@@ -307,3 +307,30 @@ Single.BannerTitle = styled.h1`
     font-size: ${props => props.theme.fonts.h1.desktop};
     margin: 0 2rem;
 `;
+
+export const Form = styled.form`
+    display: flex;
+    flex-direction: row;
+`;
+
+Form.Label = styled.label`
+    font-weight: 800;
+`;
+
+Form.Input = styled.input`
+    padding: 1rem;
+    background-color: rgba(255,255,255, 0.6);
+`;
+Form.TextArea = styled.input`
+    padding: 1rem;
+    background-color: rgba(255,255,255, 0.6);
+`;
+Form.Hidden = styled.input.attrs({
+    type: "hidden"
+})``;
+
+Form.Button = styled.button.attrs({
+    type: "submit"
+})`
+    border: 2px solid ${props => props.theme.colors.blue};
+`;
