@@ -13,7 +13,8 @@ class ContactPage extends React.PureComponent {
                 <Section>
                     <Section.Row>
                         <Section.Inner>
-                            <form action="mailto:slyngstad55@gmail.com" method="post" enctype="text/plain">
+                        
+                            <form action="/.netlify/functions/mailgun`" method="post" enctype="text/plain">
                                 <label htmlFor="name">
                                     Name
                                     <input type="text" name="name" />
