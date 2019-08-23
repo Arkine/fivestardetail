@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Page from './Page';
+import Page from '../Page';
 
 import {
     Section
-} from './styled';
+} from '../styled';
 
 class AffiliatesPage extends React.PureComponent {
     render() {

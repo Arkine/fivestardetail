@@ -310,18 +310,27 @@ Single.BannerTitle = styled.h1`
 
 export const Form = styled.form`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
 `;
 
 Form.Label = styled.label`
+    display: block;
     font-weight: 800;
+    margin-bottom: 1rem;
 `;
 
 Form.Input = styled.input`
+    display: block;
+    width: 100%;
     padding: 1rem;
     background-color: rgba(255,255,255, 0.6);
+    border: none;
+    border-radius: 4px;
 `;
 Form.TextArea = styled.input`
+    width: 100%;
+    height: 150px;
     padding: 1rem;
     background-color: rgba(255,255,255, 0.6);
 `;
@@ -332,5 +341,12 @@ Form.Hidden = styled.input.attrs({
 Form.Button = styled.button.attrs({
     type: "submit"
 })`
-    border: 2px solid ${props => props.theme.colors.blue};
+    border: 2px solid ${props => props.theme.colors.cobalt};
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 800;
+`;
+
+Form.Section = styled.div`
+    margin-bottom: 1rem;
 `;

@@ -3,9 +3,9 @@ import React from 'react';
 import {
     Section,
     NotFound
-} from './styled';
+} from '../styled';
 
-import Page from './Page';
+import Page from '../Page';
 
 export default () => {
     return (

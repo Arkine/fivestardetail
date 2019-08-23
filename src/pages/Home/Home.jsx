@@ -3,23 +3,23 @@ import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowRight, faCaretRight} from '@fortawesome/free-solid-svg-icons';
 
-import Interior from '../assets/interior.jpg';
+import Interior from '../../assets/interior.jpg';
 
-import Page from './Page';
+import Page from '../Page';
 
-import Hero from '../blocks/Hero';
-import Map from '../blocks/Map';
-import {menuItems} from '../blocks/PrimaryNav/menu';
+import Hero from '../../blocks/Hero';
+import Map from '../../blocks/Map';
+import {menuItems} from '../../blocks/PrimaryNav/menu';
 
 import {
     Section,
     Content,
     Card
-} from './styled';
+} from '../styled';
 
 import {
     Button
-} from '../app-styled.js';
+} from '../../app-styled.js';
 
 const services = menuItems.find(item => item.label === 'Services');
 
