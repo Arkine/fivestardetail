@@ -315,7 +315,7 @@ export const Form = styled.form`
 `;
 
 Form.Label = styled.label`
-    display: block;
+    display: none;
     font-weight: 800;
     margin-bottom: 1rem;
 `;
@@ -328,11 +328,12 @@ Form.Input = styled.input`
     border: none;
     border-radius: 4px;
 `;
-Form.TextArea = styled.input`
+Form.TextArea = styled.textarea`
     width: 100%;
     height: 150px;
     padding: 1rem;
     background-color: rgba(255,255,255, 0.6);
+    border-radius: 4px;
 `;
 Form.Hidden = styled.input.attrs({
     type: "hidden"
@@ -345,6 +346,12 @@ Form.Button = styled.button.attrs({
     border-radius: 4px;
     color: #fff;
     font-weight: 800;
+
+    max-width: 165px;
+
+    &:hover {
+       background-color: ${props => props.theme.colors.cobalt};
+    }
 `;
 
 Form.Section = styled.div`
