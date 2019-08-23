@@ -1,4 +1,7 @@
 import React from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
+import {faMapMarkerAlt, faPhone} from '@fortawesome/free-solid-svg-icons';
 
 import Page from '../Page';
 
@@ -74,12 +77,19 @@ class ContactPage extends React.PureComponent {
                 <Section>
                     <Section.Row>
                         <Section.Inner>
-                            <Section.FlexRow>
+                            <Section.FlexRow alignItems="flex-start">
                                 <Section.Column>
                                     <Panel>
-                                        <h2>Get In Touch</h2>
                                         <div>
-                                            <p>Etiam accumsan porttitor turpis, vitae aliquam ipsum posuere at. Donec enim erat, gravida nec tellus id, efficitur iaculis nulla. Aliquam dolor eros, bibendum ut fermentum id, viverra eget libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean finibus, nibh quis vehicula aliquet, magna orci convallis orci, non ultrices est arcu et tellus. In molestie nisi nibh, in egestas ante scelerisque at. Curabitur porta ipsum eget tempus molestie. Proin faucibus, nulla et interdum tempus, neque augue tempus ligula, in ullamcorper lacus sem ac lectus. Ut sit amet lorem eget neque accumsan sollicitudin eu ac mi. Mauris pellentesque fermentum fermentum. Quisque cursus posuere metus nec tincidunt. Proin lacinia sapien sapien, et varius dolor placerat at.</p>
+                                            <p>Have questions? Feel free to contact us and we will try to get back to you as soon as we can.</p>
+                                            <Panel.Row>
+                                                <FontAwesomeIcon icon={faMapMarkerAlt} />
+                                                <span><a href="https://www.google.com/maps/place/9477+Greenback+Ln,+Folsom,+CA+95630/@38.6790369,-121.2014992,17z/data=!3m1!4b1!4m5!3m4!1s0x809ae136c7ea705f:0x6e64b48977781fd3!8m2!3d38.6790327!4d-121.1993105">9477 Greenback Ln Folsom CA 95630</a></span>
+                                            </Panel.Row>
+                                            <Panel.Row>
+                                                <FontAwesomeIcon icon={faPhone} />
+                                                <span><a href="tel:530.391.4329">(530).391.4329</a></span>
+                                            </Panel.Row>
                                         </div>
                                     </Panel>
                                 </Section.Column>

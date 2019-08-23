@@ -11,7 +11,7 @@ Footer.Columns = styled.div`
 
     justify-content: space-between;
 
-    padding: 2rem 0;
+    padding: 3rem 0;
 
     max-width: ${props => props.theme.widths.row};
     margin: 0 auto;

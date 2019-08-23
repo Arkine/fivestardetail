@@ -36,7 +36,7 @@ export default class HomePage extends React.Component {
                     <Section>
                         <Section.Background>
                             <Section.Row>
-                                <Section.Header>Services</Section.Header>
+                                <Section.Header>Our Services</Section.Header>
                                 <Section.FlexRow>
                                     <Card>
                                         <Card.Header bgUrl={auto.featuredImage.src}/>
@@ -106,14 +106,23 @@ export default class HomePage extends React.Component {
                                     </Card>
                                 </Section.FlexRow>
                             </Section.Row>
+                            <Section.FlexRow justify="center" style={{marginTop: '2rem'}}>
+                                <Button.Link secondary>
+                                    <Link to={services.url}>View Our Services</Link>
+                                </Button.Link>
+                            </Section.FlexRow>
                         </Section.Background>
                     </Section>
                     <Section bgUrl={Interior}>
                         <Section.Overlay />
                         <Section.Row>
                             <Section.Inner>
-                                <Section.ColTitle>Additional Services</Section.ColTitle>
                                 <Section.FlexRow alignItems="flex-start">
+                                    <Section.Column>
+                                        <p>
+                                        Professional and committed to our work, Five Star Detailing & Restoration offers the best in detailing and restoration. We proudly offer a wide range of professional services for cars, trucks, motorcycles, boats, SUVs, RVs and even aircraft! What sets us apart from other detailing & restoration services is our knowledge and use of high-quality materials and equipment to ensure that your vehicle looks it's best. Our professional detailing leaves no streaks or mineral deposits and gives your vehicle a mirror-like shine, guaranteed!
+                                        </p>
+                                    </Section.Column>
                                     <Section.Column>
                                         <ul>
                                             <li><strong>Paint Application and Restoration</strong></li>
@@ -125,11 +134,6 @@ export default class HomePage extends React.Component {
                                             <li><strong>Oxidation Removal</strong></li>
                                             <li><strong>Graphics Design</strong></li>
                                         </ul>
-                                    </Section.Column>
-                                    <Section.Column>
-                                        <p>
-                                        Professional and committed to our work, Five Star Detailing & Restoration offers the best in detailing and restoration. We proudly offer a wide range of professional services for cars, trucks, motorcycles, boats, SUVs, RVs and even aircraft! What sets us apart from other detailing & restoration services is our knowledge and use of high-quality materials and equipment to ensure that your vehicle looks it's best. Our professional detailing leaves no streaks or mineral deposits and gives your vehicle a mirror-like shine, guaranteed!
-                                        </p>
                                     </Section.Column>
                                 </Section.FlexRow>
                             </Section.Inner>

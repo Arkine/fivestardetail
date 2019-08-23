@@ -14,7 +14,7 @@ export const Section = styled.section`
     background-position: center;
     background-size: cover;
 
-    padding: 2rem 0;
+    padding: 3rem 0;
 
     ul {
         margin-left: 2rem
@@ -34,11 +34,9 @@ Section.Row = styled.div`
 
     max-width: ${props => props.theme.widths.row};
     margin: 0 auto;
-    /* padding: 4rem 0; */
 
     background-image: url(${props => props.bgUrl});
     background-repeat: no-repeat;
-    /* background-color: #fff; */
     background-position: center;
     background-size: cover;
 `;
@@ -67,7 +65,7 @@ Section.PageTitle = styled.h1`
 
 Section.Header = styled.h2`
     font-size: ${props => props.theme.fonts.h2.desktop};
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 1rem;
 `;
 
@@ -93,7 +91,7 @@ export const NotFound = styled.div`
 `;
 
 Section.Column = styled.div`
-    flex-basis: 50%;
+    flex-basis: ${props => props.flexBasis || '50%'};
     /* flex-grow: 1rem; */
 `;
 
@@ -102,7 +100,7 @@ Section.ColTitle = styled.h2`
     width: 100%;
 
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 2.25em;
     font-weight: 900;
 `;
 
@@ -162,6 +160,7 @@ Card.Image = styled(Link)`
     align-items: flex-end;
 
     flex-basis: ${props => props.flexBasis ? props.flexBasis : '15rem'};
+    flex-grow: 1;
     height: ${props => props.dummy ? 0 : '200px'};
 
     border-top-left-radius: 4px;

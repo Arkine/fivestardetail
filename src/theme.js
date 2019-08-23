@@ -18,7 +18,7 @@ export default {
             mobile: '2.25rem'
         },
         h2: {
-            desktop: '1.8rem',
+            desktop: '2.25rem',
             tablet: '1.5rem',
             mobile: '1.25rem'
         },

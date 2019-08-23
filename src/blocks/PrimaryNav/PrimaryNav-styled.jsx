@@ -7,7 +7,7 @@ export const Nav = styled.nav`
     align-items: center;
     justify-content: center;
 
-    margin: 1rem 0;
+    margin: 2rem 0 3rem;
 
     background-color: ${props => props.theme.colors.smoke};
     box-shadow: 0 0 1px 1px rgba(0,0,0,.5);

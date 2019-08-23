@@ -36,4 +36,12 @@ Button.Link = styled.button`
         margin-left: 1rem;
         color: ${props => props.theme.colors.cobalt};
     }
+
+    ${props => props.secondary && `
+        padding: 1rem 1.25rem;
+        background-color: ${props.theme.colors.cobalt};
+        a {
+            color: #fff;
+        }
+    `}
 `;
