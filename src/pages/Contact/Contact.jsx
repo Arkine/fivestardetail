@@ -94,7 +94,7 @@ class ContactPage extends React.PureComponent {
                                 </Section.Column>
                                 <Section.Column>
                                     <Panel>
-                                        <ContactForm method="post" enctype="text/plain">
+                                        <ContactForm method="post" enctype="text/plain" data-netlify="true">
                                             <Form.Section>
                                                 <Form.Label htmlFor="name">Name</Form.Label>
                                                 <Form.Input onChange={this.handleFieldChange} 
