@@ -215,6 +215,13 @@ Card.Body = styled.div`
     /* margin-bottom: 1rem; */
     ul {
         li {
+            padding-left: 2.5rem;
+            svg {
+                top: 50%;
+                left: 1rem;
+                
+                transform: translateY(-50%);
+            }
             &:last-child {
                 margin-bottom: 0;
             }

@@ -29,10 +29,6 @@ Button.Link = styled.button`
 
     transition: all 0.2s ease-in-out;
 
-    &:hover {
-        background-color: ${props => props.theme.colors.cobaltDark};
-    }
-
     a {
         padding: 1rem 0;
         height: 100%;
@@ -48,6 +44,10 @@ Button.Link = styled.button`
         background-color: ${props.theme.colors.cobalt};
         a {
             color: #fff;
+        }
+
+         &:hover {
+            background-color: ${props => props.theme.colors.cobaltDark};
         }
     `}
 `;
