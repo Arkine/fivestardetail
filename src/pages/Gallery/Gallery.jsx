@@ -12,6 +12,10 @@ import {
     Card
 } from '../styled';
 
+import {
+    ImagesList
+} from './styled';
+
 
 class GalleryPage extends React.PureComponent {
     constructor(props) {
@@ -19,6 +23,7 @@ class GalleryPage extends React.PureComponent {
 
         this.state = {
             images: [],
+            activeImage: null,
             loading: false
         }
     }
@@ -60,6 +65,12 @@ class GalleryPage extends React.PureComponent {
         
     }
 
+    setActiveImage = imageId => {
+        this.setState({
+            activeImage: imageId
+        });
+    }
+
     setLoadingState = state => {
         this.setState({
             loading: state
@@ -74,9 +85,15 @@ class GalleryPage extends React.PureComponent {
                         <Section.Inner>
                             <Section.FlexRow justify="center">
                                 {this.state.loading && <Loading />}
-                                {this.state.images.length > 0 && this.state.images.map(image => (
-                                    <img src={image.thumbnail_src} height={300} width={300} />
-                                ))}
+                                {this.state.images.length > 0 && 
+                                    <ImagesList>
+                                        {this.state.images.map(image => (
+                                            <ImagesList.Card 
+                                                src={image.thumbnail_src}
+                                                onClick={e => this.setActiveImage(image.id)}
+                                            />))}
+                                    </ImagesList>
+                                }
                             </Section.FlexRow>
                         </Section.Inner>
                     </Section.Row>
