@@ -74,7 +74,7 @@ class GalleryPage extends React.PureComponent {
                         <Section.Inner>
                             <Section.FlexRow justify="center">
                                 {this.state.loading && <Loading />}
-                                {this.state.images.length && this.state.images.map(image => (
+                                {this.state.images.length > 0 && this.state.images.map(image => (
                                     <img src={image.thumbnail_src} height={300} width={300} />
                                 ))}
                             </Section.FlexRow>
