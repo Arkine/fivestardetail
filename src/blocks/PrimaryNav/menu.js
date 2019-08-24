@@ -18,6 +18,7 @@ export const menuItems = [
             {
                 label: 'Automotive Detailing',
                 url: '/services/automotive-detailing',
+                description: "",
                 featuredImage: {
                     src: autoDetailing,
                     type: 'background'
@@ -26,6 +27,7 @@ export const menuItems = [
             {
                 label: 'Exotics Detailing',
                 url: '/services/exotics-detailing',
+                description: "",
                 featuredImage: {
                     src: exoticsDetailing,
                     type: 'background'
@@ -34,6 +36,7 @@ export const menuItems = [
             {
                 label: 'Boat Detailing',
                 url: '/services/boat-detailing',
+                description: "",
                 featuredImage: {
                     src: boatDetailing,
                     type: 'background'
@@ -42,6 +45,7 @@ export const menuItems = [
             {
                 label: 'Motorcycle Detailing',
                 url: '/services/motorcycle-detailing',
+                description: "",
                 featuredImage: {
                     src: motorcycleDetailing,
                     type: 'background'
@@ -50,6 +54,7 @@ export const menuItems = [
             {
                 label: 'RV Detailing',
                 url: '/services/rv-detailing',
+                description: "",
                 featuredImage: {
                     src: rvDetailing,
                     type: 'background'
@@ -58,6 +63,7 @@ export const menuItems = [
             {
                 label: 'SeaDek',
                 url: '/services/seadek',
+                description: "",
                 featuredImage: {
                     src: seaDek,
                     type: 'background'
