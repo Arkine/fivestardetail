@@ -37,9 +37,8 @@ class ContactPage extends React.PureComponent {
         });
 
         try {
-            const resp = await fetch({
+            const resp = await fetch('/.netlify/functions/mailgun',{
                 method: 'POST',
-                url: '/.netlify/functions/mailgun',
                 data:(JSON.stringify(this.state))
             });
 
