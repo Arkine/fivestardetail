@@ -27,6 +27,12 @@ Button.Link = styled.button`
     padding: 0;
     margin-top: 1rem;
 
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: ${props => props.theme.colors.cobaltDark};
+    }
+
     a {
         padding: 1rem 0;
         height: 100%;

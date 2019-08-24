@@ -47,17 +47,22 @@ Slide.Content = styled.div`
         font-weight: 600;
         
         padding: 0;
-        margin-top: 1rem
+        margin-top: 1rem;
 
+        a {
+            color: #fff
+        }
         svg {
             display: inline-block;
-            color: ${props => props.theme.colors.cobalt};
+            color: #fff;
 
             margin-left: 1rem;
         }
 
         &:hover {
-            color: ${props => props.theme.colors.cobalt};
+            a {
+                color: ${props => props.theme.colors.cobalt};
+            }
 
             svg {
                 color: ${props => props.theme.colors.cobalt};

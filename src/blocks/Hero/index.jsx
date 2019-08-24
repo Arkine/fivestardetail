@@ -34,7 +34,7 @@ export default () => {
             {slides.map((slide, index) => (
                 <Slide bgUrl={slide.image} active={index === activeSlide}>
                     <Slide.Content>
-                        <Slide.Title>Sacramento's Premier Automotive Detailing Service</Slide.Title>
+                        <Slide.Title>{slide.title}</Slide.Title>
                         {slide.button &&
                             <button>
                                 <Link href={slide.button.url}>

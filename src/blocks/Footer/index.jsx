@@ -31,7 +31,7 @@ export default () => {
                         </div>
                         <div>
                             <FontAwesomeIcon icon={faPhone} />
-                            <span><a href="tel:530.391.4329">(530).391.4329</a></span>
+                            <span><a href="tel:5303914329">(530).391.4329</a></span>
                         </div>
                     </Footer.Address>
 

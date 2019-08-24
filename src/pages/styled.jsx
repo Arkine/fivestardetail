@@ -148,7 +148,7 @@ Card.Logo = styled.img`
     /* flex-basis: ${props => props.flexBasis ? props.flexBasis : '15rem'}; */
     height: 100px;
     
-    margin: 1rem;
+    margin: 1rem 2rem;
     transition: all 0.2s ease-in-out;
 `;
 
@@ -176,6 +176,10 @@ Card.Image = styled(Link)`
             transform: scale(1.1);
         }
     }
+
+    ${props => props.dummy && `
+        height: 0;
+    `}
 `;
 
 Card.BackgroundImage = styled.div`

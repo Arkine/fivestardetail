@@ -22,7 +22,7 @@ export default class Coatings extends React.PureComponent {
                         {coatings.children.map(coating => {
                             if (coating.featuredImage.type === 'image') {
                                 return (
-                                    <Card.LogoWrapper to={coating.url} key={`coating-${coating.label}`}>
+                                    <Card.LogoWrapper flexBasis="50%" to={coating.url} key={`coating-${coating.label}`}>
                                         <Card.Logo src={coating.featuredImage.src} />
                                     </Card.LogoWrapper>
                                 );
