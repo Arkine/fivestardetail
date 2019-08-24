@@ -27,9 +27,15 @@ class ContactPage extends React.PureComponent {
                 message: null
             }
         }
+
+        this._form = React.createRef();
     }
 
     handleFormSubmit = async e => {
+        if (!this._form.current) {
+            return;
+        }
+
         e.preventDefault();
         
         this.setState({
@@ -39,7 +45,7 @@ class ContactPage extends React.PureComponent {
         try {
             const resp = await fetch('/.netlify/functions/mailgun',{
                 method: 'POST',
-                data:(JSON.stringify(this.state))
+                data: new FormData(this._form.current)
             });
 
             if (!resp.ok) {
@@ -94,7 +100,7 @@ class ContactPage extends React.PureComponent {
                                 </Section.Column>
                                 <Section.Column>
                                     <Panel>
-                                        <ContactForm method="post" enctype="text/plain" data-netlify="true">
+                                        <ContactForm ref={this._form} method="post" data-netlify="true">
                                             <Form.Section>
                                                 <Form.Label htmlFor="name">Name</Form.Label>
                                                 <Form.Input onChange={this.handleFieldChange} 
