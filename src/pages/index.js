@@ -5,6 +5,7 @@ export default {
     About: lazy(() => import('./About')),
     Contact: lazy(() => import('./Contact')),
     Affiliates: lazy(() => import('./Affiliates')),
+    Gallery: lazy(() => import('./Gallery')),
 
     Services: lazy(() => import('./Services')),
     AutomotiveDetailing: lazy(() => import('./Services/Service-automotive')),

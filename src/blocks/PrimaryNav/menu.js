@@ -102,11 +102,11 @@ export const menuItems = [
         url: '/about',
         featuredImage: '',
     },
-    // {
-    //     label: 'Gallery',
-    //     url: '/gallery',
-    //     featuredImage: '',
-    // },
+    {
+        label: 'Gallery',
+        url: '/gallery',
+        featuredImage: '',
+    },
     // {
     //     label: 'Affiliates',
     //     url: '/affiliates',

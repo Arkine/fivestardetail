@@ -11,6 +11,7 @@ export default () => (
             <ScrollToTopRoute path="/" exact component={Pages.Home} />
             <ScrollToTopRoute path="/about" exact component={Pages.About} />
             <ScrollToTopRoute path="/affiliates" exact component={Pages.Affiliates} />
+            <ScrollToTopRoute path="/gallery" exact component={Pages.Gallery} />
             <ScrollToTopRoute path="/contact" exact component={Pages.Contact} />
             
             <ScrollToTopRoute path="/services" exact component={Pages.Services} />
