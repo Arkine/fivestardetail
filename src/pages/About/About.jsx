@@ -10,7 +10,7 @@ class AboutPage extends React.PureComponent {
     render() {
         return (
             <Page>
-                <Section>
+                <Section style={{ paddingTop: '0' }}>
                     <Section.Row>
                         <Section.Inner>
                             <h2>What is Detailing?</h2>
