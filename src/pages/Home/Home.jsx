@@ -23,6 +23,7 @@ import {
 } from '../../app-styled.js';
 
 const services = menuItems.find(item => item.label === 'Services');
+const contact = menuItems.find(item => item.label === 'Contact');
 
 const coatings = menuItems.find(item => item.label === 'Ceramic Coatings');
 const auto = services.children.find(item => item.label === 'Automotive Detailing');
@@ -137,6 +138,11 @@ export default class HomePage extends React.Component {
                                             <Li><strong>Graphics Design</strong></Li>
                                         </ul>
                                     </Section.Column>
+                                </Section.FlexRow>
+                                <Section.FlexRow justify="center" style={{marginTop: '2rem'}}>
+                                    <Button.Link secondary>
+                                        <Link to={contact.url}>Get Started Today</Link>
+                                    </Button.Link>
                                 </Section.FlexRow>
                             </Section.Inner>
                         </Section.Row>

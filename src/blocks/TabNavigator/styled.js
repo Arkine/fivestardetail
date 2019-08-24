@@ -5,6 +5,7 @@ export const Container = styled.div`
     flex-flow: row nowrap;
 
     max-width: ${props => props.theme.widths.row};
+    min-height: 600px;
     width: 100%;
     margin: 0 auto 2rem;
 `;
