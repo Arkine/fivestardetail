@@ -22,6 +22,7 @@ Tabs.Tab = styled.li`
     display: block;
     padding: 1rem;
     text-align: center;
+    margin-bottom: 0;
     
     color: ${props => props.active ? props.theme.colors.cobalt : '#fff'};
     cursor: pointer;
@@ -45,7 +46,17 @@ Panels.Pane = styled.div`
 
     h1, h2, h3, h4, h5, h6 {
         color: #333;
+        font-weight: 800;
     }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    ul {
+        margin-bottom: 2rem;
+    }
+
 
     ul {
         columns: 2;

@@ -16,6 +16,7 @@ export default createGlobalStyle`
 
         font-size: 18px;
         letter-spacing: 1.2px;
+        line-height: 1.2;
         font-family: ${props => props.theme.fonts.family};
         color: ${props => props.theme.fonts.color};
 
@@ -54,7 +55,7 @@ export default createGlobalStyle`
     }
 
     p {
-        line-height: 1.5;
+        line-height: 1.8;
         letter-spacing: 0.1em;
         margin-bottom: 1rem;
     }
@@ -67,8 +68,20 @@ export default createGlobalStyle`
         padding-left: 1.5rem;
         
         li {
-            list-style-type: disc;
+            position: relative;
+            list-style-type: none;
             line-height: 1.75;
+            margin-bottom: 1rem;
+
+            padding: 0 0.5rem 0 1.5rem;
+
+            > svg {
+                position: absolute;
+                top: 0.5rem;
+                left: 0;
+
+                color: ${props => props.theme.colors.cobalt};
+            }
         }
     }
 

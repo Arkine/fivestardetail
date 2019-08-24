@@ -14,7 +14,8 @@ import {menuItems} from '../../blocks/PrimaryNav/menu';
 import {
     Section,
     Content,
-    Card
+    Card,
+    Li
 } from '../styled';
 
 import {
@@ -42,15 +43,15 @@ export default class HomePage extends React.Component {
                                         <Card.Header bgUrl={auto.featuredImage.src}/>
                                         <Card.Body>
                                             <ul>
-                                                <li>
-                                                    <FontAwesomeIcon icon={faCaretRight} /> Quick Detail
-                                                </li>
-                                                <li>
-                                                    <FontAwesomeIcon icon={faCaretRight} /> Selling My Car Detail
-                                                </li>
-                                                <li>
-                                                    <FontAwesomeIcon icon={faCaretRight} /> Five Star Detail
-                                                </li>
+                                                <Li>
+                                                    Quick Detail
+                                                </Li>
+                                                <Li>
+                                                    Selling My Car Detail
+                                                </Li>
+                                                <Li>
+                                                    Five Star Detail
+                                                </Li>
                                             </ul>
                                         </Card.Body>
                                         <Card.Footer>
@@ -64,15 +65,15 @@ export default class HomePage extends React.Component {
                                         <Card.Header bgUrl={coatings.featuredImage.src} />
                                         <Card.Body>
                                             <ul>
-                                                <li>
-                                                    <FontAwesomeIcon icon={faCaretRight} />  FEYNLAB Coating
-                                                </li>
-                                                <li>
-                                                    <FontAwesomeIcon icon={faCaretRight} /> SOLID. Coating
-                                                </li>
-                                                <li>
-                                                    <FontAwesomeIcon icon={faCaretRight} /> Full Strenth Protection
-                                                </li>
+                                                <Li>
+                                                     FEYNLAB Coating
+                                                </Li>
+                                                <Li>
+                                                    SOLID. Coating
+                                                </Li>
+                                                <Li>
+                                                    Full Strenth Protection
+                                                </Li>
                                             </ul>
                                         </Card.Body>
                                         <Card.Footer>
@@ -86,15 +87,15 @@ export default class HomePage extends React.Component {
                                         <Card.Header bgUrl={boat.featuredImage.src} />
                                         <Card.Body>
                                             <ul>
-                                                <li>
-                                                    <FontAwesomeIcon icon={faCaretRight} /> Exterior Detail
-                                                </li>
-                                                <li>
-                                                <FontAwesomeIcon icon={faCaretRight} /> Interior Detail
-                                                </li>
-                                                <li>
-                                                    <FontAwesomeIcon icon={faCaretRight} /> Full Detail
-                                                </li>
+                                                <Li>
+                                                    Exterior Detail
+                                                </Li>
+                                                <Li>
+                                                Interior Detail
+                                                </Li>
+                                                <Li>
+                                                    Full Detail
+                                                </Li>
                                             </ul>
                                         </Card.Body>
                                         <Card.Footer>
@@ -125,14 +126,14 @@ export default class HomePage extends React.Component {
                                     </Section.Column>
                                     <Section.Column>
                                         <ul>
-                                            <li><strong>Paint Application and Restoration</strong></li>
-                                            <li><strong>Coating Application</strong></li>
-                                            <li><strong>Upholstery Cleaning</strong></li>
-                                            <li><strong>Window Tint Application and Removal</strong></li>
-                                            <li><strong>Clear Bra Application</strong></li>
-                                            <li><strong>Vehicle Restyling</strong></li>
-                                            <li><strong>Oxidation Removal</strong></li>
-                                            <li><strong>Graphics Design</strong></li>
+                                            <Li><strong>Paint Application and Restoration</strong></Li>
+                                            <Li><strong>Coating Application</strong></Li>
+                                            <Li><strong>Upholstery Cleaning</strong></Li>
+                                            <Li><strong>Window Tint Application and Removal</strong></Li>
+                                            <Li><strong>Clear Bra Application</strong></Li>
+                                            <Li><strong>Vehicle Restyling</strong></Li>
+                                            <Li><strong>Oxidation Removal</strong></Li>
+                                            <Li><strong>Graphics Design</strong></Li>
                                         </ul>
                                     </Section.Column>
                                 </Section.FlexRow>

@@ -1,5 +1,9 @@
+import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faArrowRight, faCaretRight} from '@fortawesome/free-solid-svg-icons';
 
 export const Content = styled.div`
 `;
@@ -55,7 +59,7 @@ Section.Overlay = styled.div`
     height: 100%;
     width: 100%;
 
-    background-color: rgba(0,0,0, 0.7);
+    background-color: rgba(0,0,0, 0.9);
 `;
 
 Section.PageTitle = styled.h1`
@@ -209,6 +213,13 @@ Card.ImageText = styled.span`
 
 Card.Body = styled.div`
     /* margin-bottom: 1rem; */
+    ul {
+        li {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 `;
 Card.Header = styled.div`
     height: 150px;
@@ -359,4 +370,16 @@ Form.Button = styled.button.attrs({
 
 Form.Section = styled.div`
     margin-bottom: 1rem;
+`;
+
+const LiEl = props => (
+    <li>
+        <FontAwesomeIcon icon={faCaretRight} /> {props.children}
+    </li>
+);
+
+export const Li = styled(LiEl)`
+    svg {
+        color: ${props => props.theme.colors.cobalt};
+    }
 `;

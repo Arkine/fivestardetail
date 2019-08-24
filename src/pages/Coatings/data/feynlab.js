@@ -16,6 +16,9 @@ import FeynlabHealLiteBottleDiagram from '../../../assets/feynlab-heal-lite-diag
 import WheelsOffImage from '../../../assets/feynlab-wheels-off.jpg';
 import HydroMarinePackageBottle from '../../../assets/feynlab-hydro-marine-bottle.png';
 
+
+import { Li } from '../../styled.jsx';
+
 export const tabs = [
     {
         title: "Interior Package",
@@ -45,10 +48,10 @@ export const InteriorPackage = () => (
         <Section.Title>Interior Package</Section.Title>
         <FeaturedImage image={FeynlabInteriorImage} />
         <ul>
-            <li>Interior Wipe down and Cleaning of all Surfaces</li>
-            <li>Interior Vacuum and Wipe Down of Floor and Floor Mats</li>
-            <li>Interior steam clean and shampoo Floor and Floor Mats</li>
-            <li>Clean and Coat all Leather</li>
+            <Li>Interior Wipe down and Cleaning of all Surfaces</Li>
+            <Li>Interior Vacuum and Wipe Down of Floor and Floor Mats</Li>
+            <Li>Interior steam clean and shampoo Floor and Floor Mats</Li>
+            <Li>Clean and Coat all Leather</Li>
         </ul>
     </Section>
 );
@@ -57,10 +60,10 @@ export const WheelsOffPackage = () => (
         <Section.Title>Wheels Off Package</Section.Title>
         <FeaturedImage image={WheelsOffImage} />
         <ul>
-            <li>Removal of all four wheels</li>
-            <li>Steam cleaning of wheels and calipers inside and out</li>
-            <li>Wheel & Caliper applied to calipers</li>
-            <li>Wheel & Caliper applied on all exterior wheel surfaces</li>
+            <Li>Removal of all four wheels</Li>
+            <Li>Steam cleaning of wheels and calipers inside and out</Li>
+            <Li>Wheel & Caliper applied to calipers</Li>
+            <Li>Wheel & Caliper applied on all exterior wheel surfaces</Li>
         </ul>
     </Section>
 );
@@ -71,9 +74,9 @@ export const CeramicLite = () => (
             <FeaturedImage height='200px' width='200px' image={FeynlabCeramicLiteBottle} float='left' />
             <p>Ceramic lite is an ultra slick, durable, glossy and extremely hydrophobic. It is warrantied for 1 year but can easily last longer if cared for! It is one of our highest gloss coatings and is also used to top off our other Feynlab ceramic coating packages.</p>
             <ul>
-                <li>1 Layer of Ceramic Lite applied to painted surfaces</li>
-                <li>1 Layer of Ceramic Lite applied to front window</li>
-                <li>1 year warranty</li>
+                <Li>1 Layer of Ceramic Lite applied to painted surfaces</Li>
+                <Li>1 Layer of Ceramic Lite applied to front window</Li>
+                <Li>1 year warranty</Li>
             </ul>
         </Section>
         <Section>
@@ -89,12 +92,12 @@ export const CeramicPlus = () => (
             <FeaturedImage height='200px' width='200px' image={FeynlabCeramicPlusBottle} float='left' />
             <p>Ceramic Plus combines ultra durable ceramic technology with self healing technology. The ceramic portion of this product has been modified to maintain a high level of flexibility by using shorter chain ceramic co-polymers, this allows the self healing portion to function although it is a lesser effect than self heal lite. This is one of the hardest coatings out there and is warrantied for 5 years.</p>
             <ul>
-                <li>​1 layer of Ceramic Plus applied to paint</li>
-                <li>1 layer of Top coat applied to paint</li>
-                <li>1 layer of Wheel and Caliper applied to wheel faces</li>
-                <li>1 layer of Plastic applied to plastics</li>
-                <li>1 layer of Ceramic lite applied to windshield</li>
-                <li>5 year warranty</li>
+                <Li>​1 layer of Ceramic Plus applied to paint</Li>
+                <Li>1 layer of Top coat applied to paint</Li>
+                <Li>1 layer of Wheel and Caliper applied to wheel faces</Li>
+                <Li>1 layer of Plastic applied to plastics</Li>
+                <Li>1 layer of Ceramic lite applied to windshield</Li>
+                <Li>5 year warranty</Li>
             </ul>
         </Section>
         <Section>
@@ -109,12 +112,12 @@ export const CeramicPackage = () => (
             <FeaturedImage height='200px' width='200px' image={FeynlabCeramicBottleImage} float='left' />
             <p>This is an ultra-high solids coating that forms a lattice structure of silica, silicon-nitride and silicon-carbide. This gives Ceramic extreme temperature resistance (up to 750 degrees Celsius), the ultimate scratch resistance, intense gloss, and magnificent hydrophobicity. CERAMIC also provides UV protection, and chemical resistance (acid rain), protecting the paint from fading for many years. This coating is warrantied for 3 years but will outlast that time if maintained.</p>
             <ul>
-                <li>1 layer of Ceramic applied to paint</li>
-                <li>1 Layer of Top coat applied to paint</li>
-                <li>1 layer of wheel and caliper applied to wheel faces</li>
-                <li>1 layer of plastic applied to plastic trim</li>
-                <li>1 layer of Ceramic Lite applied to windshield</li>
-                <li>3 year warranty</li>
+                <Li>1 layer of Ceramic applied to paint</Li>
+                <Li>1 Layer of Top coat applied to paint</Li>
+                <Li>1 layer of wheel and caliper applied to wheel faces</Li>
+                <Li>1 layer of plastic applied to plastic trim</Li>
+                <Li>1 layer of Ceramic Lite applied to windshield</Li>
+                <Li>3 year warranty</Li>
             </ul>
         </Section>
         <Section>
@@ -130,11 +133,11 @@ export const HealLitePackage = () => (
             <FeaturedImage height='200px' width='200px' image={FeynlabHealLiteBottleImage} float='left' />
             <p>This product was developed with darker colored vehicles in mind, where swirl marks and “spider web” scratches are more visible. Micro-swirls are inevitable on darker colored cars, no matter how careful you may be, how many buckets you use during washing or what our competition have promised you about their Ceramic Coatings, micro-swirls just happen. HEAL LITE is our answer to this, heat from the sun will cause the Ceramic Polymer Matrix to re-set, if you are in a rush you could use a hair dryer or some hot water (at your own risk!).</p>
             <ul>
-               <li>​1 layer of Self Heal lite applied to paint</li>
-               <li>​1 layer of Top coat applied to paint</li>
-               <li>​1 layer of Wheel and caliper applied to wheel faces</li>
-               <li>​1 layer of Plastic applied to plastic surfaces</li>
-               <li>​1 layer of Ceramic Lite applied to front windshield</li>
+               <Li>​1 layer of Self Heal lite applied to paint</Li>
+               <Li>​1 layer of Top coat applied to paint</Li>
+               <Li>​1 layer of Wheel and caliper applied to wheel faces</Li>
+               <Li>​1 layer of Plastic applied to plastic surfaces</Li>
+               <Li>​1 layer of Ceramic Lite applied to front windshield</Li>
             </ul>
         </Section>
         <Section>

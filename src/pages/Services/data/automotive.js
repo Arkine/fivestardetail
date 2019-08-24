@@ -4,6 +4,10 @@ import {
     Section
 }  from '../../../blocks/TabNavigator/styled';
 
+import {
+    Li
+} from '../../styled';
+
 import InteriorDetailingImage from '../../../assets/auto-interior-detail.jpg';
 import PaintCorrectionImage from '../../../assets/paint-correction.jpg';
 
@@ -44,15 +48,15 @@ export const ExteriorDetail = () => (
     <Section>
         <Section.Title>Exterior Detail</Section.Title>
         <ul>
-            <li>Hand Wash &amp; Dry</li>
-            <li>Clean Rims, Tires, &amp; Wheel Wells</li>
-            <li>Remove Surface Contaminants With Clay Bar</li>
-            <li>Condition&nbsp;Tires</li>
-            <li>Condition Wheel Wells</li>
-            <li>Condition Exterior Trim</li>
-            <li>Clean &amp; Wipe Door Jams</li>
-            <li>Apply Exterior Paint Protection (Wax/Sealant)</li>
-            <li>Clean and Polish Glass</li>
+            <Li>Hand Wash &amp; Dry</Li>
+            <Li>Clean Rims, Tires, &amp; Wheel Wells</Li>
+            <Li>Remove Surface Contaminants With Clay Bar</Li>
+            <Li>Condition&nbsp;Tires</Li>
+            <Li>Condition Wheel Wells</Li>
+            <Li>Condition Exterior Trim</Li>
+            <Li>Clean &amp; Wipe Door Jams</Li>
+            <Li>Apply Exterior Paint Protection (Wax/Sealant)</Li>
+            <Li>Clean and Polish Glass</Li>
         </ul>
     </Section>
 );
@@ -63,14 +67,14 @@ export const InteriorDetail = () => (
         <Section.Title>Interior Detail</Section.Title>
         <FeaturedImage image={InteriorDetailingImage} />
         <ul>
-            <li>Vacuum Carpets &amp; Seats</li>
-            <li>Clean &amp; Condition Seats, Dash, &amp; Panels</li>
-            <li>Shampoo Carpets, Seats, &amp; Trunk</li>
-            <li>Clean &amp; Condition Leather Seats</li>
-            <li>Clean &amp; Polish Glass</li>
-            <li>Clean Headliner</li>
-            <li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</li>
-            <li>Clean &amp; Wipe Door Jams</li>
+            <Li>Vacuum Carpets &amp; Seats</Li>
+            <Li>Clean &amp; Condition Seats, Dash, &amp; Panels</Li>
+            <Li>Shampoo Carpets, Seats, &amp; Trunk</Li>
+            <Li>Clean &amp; Condition Leather Seats</Li>
+            <Li>Clean &amp; Polish Glass</Li>
+            <Li>Clean Headliner</Li>
+            <Li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</Li>
+            <Li>Clean &amp; Wipe Door Jams</Li>
         </ul>
     </Section>
 );
@@ -81,28 +85,28 @@ export const FullDetail = () => (
         <Section>
             <h3><strong>Exterior</strong></h3>
             <ul>
-                <li>Hand Wash &amp; Dry</li>
-                <li>Clean Rims, Tires, &amp; Wheel Wells</li>
-                <li>Remove Surface Contaminants With Clay Bar</li>
-                <li>Condition&nbsp;Tires</li>
-                <li>Condition Wheel Wells</li>
-                <li>Condition Exterior Trim</li>
-                <li>Clean &amp; Wipe Door Jams</li>
-                <li>Apply Exterior Paint Protection (Wax/Sealant)</li>
-                <li>Clean and Polish Glass</li>
+                <Li>Hand Wash &amp; Dry</Li>
+                <Li>Clean Rims, Tires, &amp; Wheel Wells</Li>
+                <Li>Remove Surface Contaminants With Clay Bar</Li>
+                <Li>Condition&nbsp;Tires</Li>
+                <Li>Condition Wheel Wells</Li>
+                <Li>Condition Exterior Trim</Li>
+                <Li>Clean &amp; Wipe Door Jams</Li>
+                <Li>Apply Exterior Paint Protection (Wax/Sealant)</Li>
+                <Li>Clean and Polish Glass</Li>
             </ul>
         </Section>
         <Section>
             <h3><strong>Interior</strong></h3>
             <ul>
-                <li>Vacuum Carpets &amp; Seats</li>
-                <li>Clean &amp; Condition Seats, Dash, &amp; Panels</li>
-                <li>Shampoo Carpets, Seats, &amp; Trunk</li>
-                <li>Clean &amp; Condition Leather Seats</li>
-                <li>Clean &amp; Polish Glass</li>
-                <li>Clean Headliner</li>
-                <li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</li>
-                <li>Clean &amp; Wipe Door Jams</li>
+                <Li>Vacuum Carpets &amp; Seats</Li>
+                <Li>Clean &amp; Condition Seats, Dash, &amp; Panels</Li>
+                <Li>Shampoo Carpets, Seats, &amp; Trunk</Li>
+                <Li>Clean &amp; Condition Leather Seats</Li>
+                <Li>Clean &amp; Polish Glass</Li>
+                <Li>Clean Headliner</Li>
+                <Li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</Li>
+                <Li>Clean &amp; Wipe Door Jams</Li>
             </ul>
         </Section>
     </div>
@@ -114,20 +118,20 @@ export const QuickDetail = () => (
         <Section>
             <h3><strong>Exterior</strong></h3>
             <ul>
-                <li>Hand Wash &amp; Dry</li>
-                <li>Clean &amp; Polish Glass</li>
-                <li>Clean Rims, Tires, &amp; Wheel Wells</li>
-                <li>Condition Tires</li>
+                <Li>Hand Wash &amp; Dry</Li>
+                <Li>Clean &amp; Polish Glass</Li>
+                <Li>Clean Rims, Tires, &amp; Wheel Wells</Li>
+                <Li>Condition Tires</Li>
             </ul>
         
         </Section>
         <Section>
             <h3><strong>Interior</strong></h3>
             <ul>
-                <li>Vacuum</li>
-                <li>Clean &amp; Polish Glass</li>
-                <li>Quick Wipedown</li>
-                <li>Wipe Door Jams</li>
+                <Li>Vacuum</Li>
+                <Li>Clean &amp; Polish Glass</Li>
+                <Li>Quick Wipedown</Li>
+                <Li>Wipe Door Jams</Li>
             </ul>
         </Section>
     </div>
@@ -139,28 +143,28 @@ export const SellingMyCarDetail = () => (
         <Section>
             <h3><strong>Exterior</strong></h3>
             <ul>
-                <li>Hand Wash &amp; Dry</li>
-                <li>Clean Rims, Tires, &amp; Wheel Wells</li>
-                <li>Condition&nbsp;Tires</li>
-                <li>Condition Wheel Wells</li>
-                <li>Condition Exterior Trim</li>
-                <li>Clean &amp; Wipe Door Jams</li>
-                <li>Clean and Polish Glass</li>
-                <li>Clean Engine</li>
-                <li>Condition Engine</li>
+                <Li>Hand Wash &amp; Dry</Li>
+                <Li>Clean Rims, Tires, &amp; Wheel Wells</Li>
+                <Li>Condition&nbsp;Tires</Li>
+                <Li>Condition Wheel Wells</Li>
+                <Li>Condition Exterior Trim</Li>
+                <Li>Clean &amp; Wipe Door Jams</Li>
+                <Li>Clean and Polish Glass</Li>
+                <Li>Clean Engine</Li>
+                <Li>Condition Engine</Li>
             </ul>
         </Section>
         <Section>
             <h3><strong>Interior</strong></h3>
             <ul>
-                <li>Vacuum Carpets &amp; Seats</li>
-                <li>Clean &amp; Condition Seats, Dash, &amp; Panels</li>
-                <li>Shampoo Carpets, Seats, &amp; Trunk</li>
-                <li>Clean &amp; Condition Leather Seats</li>
-                <li>Clean &amp; Polish Glass</li>
-                <li>Clean Headliner</li>
-                <li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</li>
-                <li>Clean &amp; Wipe Door Jams</li>
+                <Li>Vacuum Carpets &amp; Seats</Li>
+                <Li>Clean &amp; Condition Seats, Dash, &amp; Panels</Li>
+                <Li>Shampoo Carpets, Seats, &amp; Trunk</Li>
+                <Li>Clean &amp; Condition Leather Seats</Li>
+                <Li>Clean &amp; Polish Glass</Li>
+                <Li>Clean Headliner</Li>
+                <Li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</Li>
+                <Li>Clean &amp; Wipe Door Jams</Li>
             </ul>
         </Section>
     </div>
@@ -172,31 +176,31 @@ export const FiveStarDetail = () => (
         <Section>
             <h3><strong>Exterior</strong></h3>
             <ul>
-                <li>Hand Wash &amp; Dry</li>
-                <li>Clean Rims, Tires, &amp; Wheel Wells</li>
-                <li>Remove Surface Contaminants With Clay Bar</li>
-                <li>Condition&nbsp;Tires</li>
-                <li>Condition Wheel Wells</li>
-                <li>Condition Exterior Trim</li>
-                <li>Clean &amp; Wipe Door Jams</li>
-                <li>Apply Exterior Paint Protection (Wax/Sealant)</li>
-                <li>Clean and Polish Glass</li>
-                <li>Clean Engine</li>
-                <li>Condition Engine</li>
+                <Li>Hand Wash &amp; Dry</Li>
+                <Li>Clean Rims, Tires, &amp; Wheel Wells</Li>
+                <Li>Remove Surface Contaminants With Clay Bar</Li>
+                <Li>Condition&nbsp;Tires</Li>
+                <Li>Condition Wheel Wells</Li>
+                <Li>Condition Exterior Trim</Li>
+                <Li>Clean &amp; Wipe Door Jams</Li>
+                <Li>Apply Exterior Paint Protection (Wax/Sealant)</Li>
+                <Li>Clean and Polish Glass</Li>
+                <Li>Clean Engine</Li>
+                <Li>Condition Engine</Li>
             </ul>
         </Section>
 
         <Section>
             <h3><strong>Interior</strong></h3>
             <ul>
-                <li>Vacuum Carpets &amp; Seats</li>
-                <li>Clean &amp; Condition Seats, Dash, &amp; Panels</li>
-                <li>Shampoo Carpets, Seats, &amp; Trunk</li>
-                <li>Clean &amp; Condition Leather Seats</li>
-                <li>Clean &amp; Polish Glass</li>
-                <li>Clean Headliner</li>
-                <li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</li>
-                <li>Clean &amp; Wipe Door Jams</li>
+                <Li>Vacuum Carpets &amp; Seats</Li>
+                <Li>Clean &amp; Condition Seats, Dash, &amp; Panels</Li>
+                <Li>Shampoo Carpets, Seats, &amp; Trunk</Li>
+                <Li>Clean &amp; Condition Leather Seats</Li>
+                <Li>Clean &amp; Polish Glass</Li>
+                <Li>Clean Headliner</Li>
+                <Li>Steam Clean Cracks and Crevices and All Panels, Carpet and Seats</Li>
+                <Li>Clean &amp; Wipe Door Jams</Li>
             </ul>
         </Section>      
     </div>
@@ -208,11 +212,11 @@ export const PaintCorrection = () => (
         <FeaturedImage image={PaintCorrectionImage} />
         <Section>
         <ul>
-            <li>Single Stage Paint Correction</li>
-            <li>Two Stage Paint Correction</li>
-            <li>Three Stage Paint Correction</li>
-            <li>Wet Sanding</li>
-            <li>(Call for Quote)</li>
+            <Li>Single Stage Paint Correction</Li>
+            <Li>Two Stage Paint Correction</Li>
+            <Li>Three Stage Paint Correction</Li>
+            <Li>Wet Sanding</Li>
+            <Li>(Call for Quote)</Li>
             </ul>
         </Section>
     </div>
@@ -222,24 +226,24 @@ export const Addons = () => (
     <Section>
         <Section.Title>Addons</Section.Title>
         <ul>
-            <li>Vehicle Customization</li>
-            <li>Clay Bar</li>
-            <li>Trim Restoration</li>
-            <li>Headlight Restoration</li>
-            <li>Engine Detail</li>
-            <li>Water Spot Removal</li>
-            <li>Fabric Stain Guard</li>
-            <li>Window Tint Removal</li>
-            <li>Emblem Debadging</li>
-            <li>Clear Bra</li>
-            <li>Graphic Design</li>
-            <li>Decal Removal</li>
-            <li>Vehicle Wraps</li>
-            <li>Carpet Dyeing</li>
-            <li>Upholstery Repair</li>
-            <li>Paint less Dent Repair</li>
-            <li>Painting</li>
-            <li>Paint Protection Film</li>
+            <Li>Vehicle Customization</Li>
+            <Li>Clay Bar</Li>
+            <Li>Trim Restoration</Li>
+            <Li>Headlight Restoration</Li>
+            <Li>Engine Detail</Li>
+            <Li>Water Spot Removal</Li>
+            <Li>Fabric Stain Guard</Li>
+            <Li>Window Tint Removal</Li>
+            <Li>Emblem Debadging</Li>
+            <Li>Clear Bra</Li>
+            <Li>Graphic Design</Li>
+            <Li>Decal Removal</Li>
+            <Li>Vehicle Wraps</Li>
+            <Li>Carpet Dyeing</Li>
+            <Li>Upholstery Repair</Li>
+            <Li>Paint less Dent Repair</Li>
+            <Li>Painting</Li>
+            <Li>Paint Protection Film</Li>
         </ul>
     </Section>
 );
@@ -249,10 +253,10 @@ export const Upcharges = () => (
         <Section>
             <Section.Title>Things that may result in an upcharge</Section.Title>
             <ul>
-                <li>Pet hair</li>
-                <li>Cigarette smoke residue</li>
-                <li>Excessive sand or dirt</li>
-                <li>Headliner deep cleaning</li>
+                <Li>Pet hair</Li>
+                <Li>Cigarette smoke residue</Li>
+                <Li>Excessive sand or dirt</Li>
+                <Li>Headliner deep cleaning</Li>
             </ul>
         </Section>
         <Section>

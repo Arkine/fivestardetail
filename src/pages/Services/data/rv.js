@@ -3,6 +3,9 @@ import {
     FeaturedImage,
     Section
 }  from '../../../blocks/TabNavigator/styled';
+import {
+    Li
+} from '../../styled';
 
 import RvDetailInterior from '../../../assets/rv-detail-interior.jpg';
 
@@ -25,18 +28,18 @@ export const ExteriorDetail = () => (
     <Section>
         <Section.Title>Exterior Detail</Section.Title>
         <ul>
-            <li>Hand Wash &amp; Dry</li>
-            <li>Clean &amp; Polish Windows</li>
-            <li>Clean Rims</li>
-            <li>Clean Tires</li>
-            <li>Condition Tires</li>
-            <li>Clean &amp;Condition Trim</li>
-            <li>Wax/Seal</li>
-            <li>Oxidation Removal</li>
-            <li>Light Scratch &amp; Imperfection Removal</li>
-            <li>Restore Faded Fiberglass &amp; Shine</li>
-            <li>Clean Roof</li>
-            <li>Seal Roof</li>
+            <Li>Hand Wash &amp; Dry</Li>
+            <Li>Clean &amp; Polish Windows</Li>
+            <Li>Clean Rims</Li>
+            <Li>Clean Tires</Li>
+            <Li>Condition Tires</Li>
+            <Li>Clean &amp;Condition Trim</Li>
+            <Li>Wax/Seal</Li>
+            <Li>Oxidation Removal</Li>
+            <Li>Light Scratch &amp; Imperfection Removal</Li>
+            <Li>Restore Faded Fiberglass &amp; Shine</Li>
+            <Li>Clean Roof</Li>
+            <Li>Seal Roof</Li>
         </ul>
     </Section>
 );
@@ -46,21 +49,21 @@ export const InteriorDetail = () => (
         <Section.Title>Interior Detail</Section.Title>
         <FeaturedImage image={RvDetailInterior} />
         <ul>
-            <li>Clean &amp; Polish Windows</li>
-            <li>Steam Clean Carpets &amp; Seats</li>
-            <li>Steam Clean Cracks &nbsp;&amp; Crevices</li>
-            <li>Clean Kitchen Counters</li>
-            <li>Clean Bathroom Counters</li>
-            <li>Clean Tables</li>
-            <li>Dust</li>
-            <li>Vacuum Interior</li>
-            <li>Make Beds</li>
-            <li>Condition Leather</li>
-            <li>Stain Treatment</li>
-            <li>Clean Living Quarters</li>
-            <li>Clean Fridge (If Empty)</li>
-            <li>Clean Inside of Cabinets (If Empty)</li>
-            <li>Shampoo Carpets &amp;&nbsp;Seats</li>
+            <Li>Clean &amp; Polish Windows</Li>
+            <Li>Steam Clean Carpets &amp; Seats</Li>
+            <Li>Steam Clean Cracks &nbsp;&amp; Crevices</Li>
+            <Li>Clean Kitchen Counters</Li>
+            <Li>Clean Bathroom Counters</Li>
+            <Li>Clean Tables</Li>
+            <Li>Dust</Li>
+            <Li>Vacuum Interior</Li>
+            <Li>Make Beds</Li>
+            <Li>Condition Leather</Li>
+            <Li>Stain Treatment</Li>
+            <Li>Clean Living Quarters</Li>
+            <Li>Clean Fridge (If Empty)</Li>
+            <Li>Clean Inside of Cabinets (If Empty)</Li>
+            <Li>Shampoo Carpets &amp;&nbsp;Seats</Li>
         </ul>
     </Section>
 );
@@ -71,37 +74,37 @@ export const FullDetail = () => (
         <Section>
             <h3><strong>Exterior</strong></h3>
             <ul>
-                <li>Hand Wash &amp; Dry</li>
-                <li>Clean &amp; Polish Windows</li>
-                <li>Clean Rims</li>
-                <li>Clean Tires</li>
-                <li>Condition Tires</li>
-                <li>Clean &amp;Condition Trim</li>
-                <li>Wax/Seal</li>
-                <li>Oxidation Removal</li>
-                <li>Light Scratch &amp; Imperfection Removal</li>
-                <li>Restore Faded Fiberglass &amp; Shine</li>
-                <li>Clean Roof</li>
-                <li>Seal Roof</li>
+                <Li>Hand Wash &amp; Dry</Li>
+                <Li>Clean &amp; Polish Windows</Li>
+                <Li>Clean Rims</Li>
+                <Li>Clean Tires</Li>
+                <Li>Condition Tires</Li>
+                <Li>Clean &amp;Condition Trim</Li>
+                <Li>Wax/Seal</Li>
+                <Li>Oxidation Removal</Li>
+                <Li>Light Scratch &amp; Imperfection Removal</Li>
+                <Li>Restore Faded Fiberglass &amp; Shine</Li>
+                <Li>Clean Roof</Li>
+                <Li>Seal Roof</Li>
             </ul>
         </Section>
         <Section>
             <h3><strong>Interior</strong></h3>
             <ul>
-                <li>Steam Clean Carpets &amp; Seats</li>
-                <li>Steam Clean Cracks &nbsp;&amp; Crevices</li>
-                <li>Clean Kitchen Counters</li>
-                <li>Clean Bathroom Counters</li>
-                <li>Clean Tables</li>
-                <li>Dust</li>
-                <li>Vacuum Interior</li>
-                <li>Make Beds</li>
-                <li>Condition Leather</li>
-                <li>Stain Treatment</li>
-                <li>Clean Living Quarters</li>
-                <li>Clean Fridge (If Empty)</li>
-                <li>Clean Inside of Cabinets (If Empty)</li>
-                <li>Shampoo Carpets &amp;&nbsp;Seats</li>
+                <Li>Steam Clean Carpets &amp; Seats</Li>
+                <Li>Steam Clean Cracks &nbsp;&amp; Crevices</Li>
+                <Li>Clean Kitchen Counters</Li>
+                <Li>Clean Bathroom Counters</Li>
+                <Li>Clean Tables</Li>
+                <Li>Dust</Li>
+                <Li>Vacuum Interior</Li>
+                <Li>Make Beds</Li>
+                <Li>Condition Leather</Li>
+                <Li>Stain Treatment</Li>
+                <Li>Clean Living Quarters</Li>
+                <Li>Clean Fridge (If Empty)</Li>
+                <Li>Clean Inside of Cabinets (If Empty)</Li>
+                <Li>Shampoo Carpets &amp;&nbsp;Seats</Li>
             </ul>
         </Section>
     </Section>
@@ -111,18 +114,18 @@ export const AddOns = () => (
     <Section>
         <Section.Title>Add-ons</Section.Title>
         <ul>
-            <li>Clay Bar: Call for pricing</li>
-            <li>Trim Restoration: Call for pricing</li>
-            <li>Headlight Restoration: Call for pricing</li>
-            <li>Engine Detail: Call for pricing</li>
-            <li>Water Spot Removal: Call for pricing</li>
-            <li>Fabric Stain Guard: Call for pricing</li>
-            <li>Window Tint Removal: Starting at $25/window</li>
-            <li>Emblem Debadging: $20 per badge</li>
-            <li>Graphic Design: Call for pricing</li>
-            <li>Decal Removal: Call for pricing</li>
-            <li>Vehicle Wraps: Call for pricing</li>
-            <li>Carpet Dyeing: Call for pricing</li>
+            <Li>Clay Bar: Call for pricing</Li>
+            <Li>Trim Restoration: Call for pricing</Li>
+            <Li>Headlight Restoration: Call for pricing</Li>
+            <Li>Engine Detail: Call for pricing</Li>
+            <Li>Water Spot Removal: Call for pricing</Li>
+            <Li>Fabric Stain Guard: Call for pricing</Li>
+            <Li>Window Tint Removal: Starting at $25/window</Li>
+            <Li>Emblem Debadging: $20 per badge</Li>
+            <Li>Graphic Design: Call for pricing</Li>
+            <Li>Decal Removal: Call for pricing</Li>
+            <Li>Vehicle Wraps: Call for pricing</Li>
+            <Li>Carpet Dyeing: Call for pricing</Li>
         </ul>
     </Section>
 );

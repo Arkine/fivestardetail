@@ -3,6 +3,9 @@ import {
     FeaturedImage,
     Section
 }  from '../../../blocks/TabNavigator/styled';
+import {
+    Li
+} from '../../styled';
 
 export const tabs = [
     {
@@ -17,14 +20,14 @@ export const Detailing = () => (
     <Section>
         <Section.Title>Detailing</Section.Title>
         <ul>
-            <li>Wash</li>
-            <li>Clean Tires</li>
-            <li>Clean Rims</li>
-            <li>Steam Clean Engine</li>
-            <li>Windshield Buff &amp; Polish</li>
-            <li>Clean &amp; Condition Leather</li>
-            <li>Shine Chrome</li>
-            <li>Wax/Seal/Ceramic Coat</li>
+            <Li>Wash</Li>
+            <Li>Clean Tires</Li>
+            <Li>Clean Rims</Li>
+            <Li>Steam Clean Engine</Li>
+            <Li>Windshield Buff &amp; Polish</Li>
+            <Li>Clean &amp; Condition Leather</Li>
+            <Li>Shine Chrome</Li>
+            <Li>Wax/Seal/Ceramic Coat</Li>
         </ul>
     </Section>
 );
@@ -33,16 +36,16 @@ export const AddOns = () => (
     <Section>
         <Section.Title>Add-ons</Section.Title>
         <ul>
-            <li>Clay Bar</li>
-            <li>Trim Restoration</li>
-            <li>Headlight Restoration</li>
-            <li>Engine Detail</li>
-            <li>Water Spot Removal</li>
-            <li>Fabric Stain Guard</li>
-            <li>Emblem Debadging</li>
-            <li>Graphic Design</li>
-            <li>Decal Removal</li>
-            <li>Vehicle Wraps</li>
+            <Li>Clay Bar</Li>
+            <Li>Trim Restoration</Li>
+            <Li>Headlight Restoration</Li>
+            <Li>Engine Detail</Li>
+            <Li>Water Spot Removal</Li>
+            <Li>Fabric Stain Guard</Li>
+            <Li>Emblem Debadging</Li>
+            <Li>Graphic Design</Li>
+            <Li>Decal Removal</Li>
+            <Li>Vehicle Wraps</Li>
         </ul>
     </Section>
 );
