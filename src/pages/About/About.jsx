@@ -9,7 +9,7 @@ import {
 class AboutPage extends React.PureComponent {
     render() {
         return (
-            <Page title="About">
+            <Page>
                 <Section>
                     <Section.Row>
                         <Section.Inner>
