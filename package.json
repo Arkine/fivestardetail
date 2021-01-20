@@ -6,7 +6,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "gsap": "^2.1.2",
+    "gsap": "^3.6.0",
     "history": "^4.9.0",
     "mailgun-js": "^0.22.0",
     "react": "^16.8.4",
